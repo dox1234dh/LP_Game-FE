@@ -1,0 +1,1 @@
+Đây là dự án dành cho việc nghiên cứu, tất cả các tài nguyên trong dự án lấy từ nhiều nguồn, nếu có thể tôi sẽ gán link tài nguyên. Những hình ảnh, âm thanh, tài nguyên trong này không phục vụ mục đích thương mại.
