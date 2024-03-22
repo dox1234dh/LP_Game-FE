@@ -13,5 +13,10 @@
     "nuxt": "^3.11.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@pinia/nuxt": "^0.5.1",
+    "nuxtjs-phaser": "^3.0.17",
+    "pinia": "^2.1.7"
   }
 }
