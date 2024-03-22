@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-  ssr: false,
+  devtools: { enabled: false },
   app: {
     head: {
       title: 'LP GAME',
@@ -11,7 +10,7 @@ export default defineNuxtConfig({
   plugins: [
     { src: 'node_modules/nuxtjs-phaser', mode: 'client' },
   ],
-  modules: ['@pinia/nuxt','@nuxtjs/tailwindcss','@element-plus/nuxt'],
+  modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss', '@ant-design-vue/nuxt'],
   typescript: { tsConfig: { compilerOptions: { baseUrl: ".", }, }, },
   postcss: {
     plugins: {
@@ -23,5 +22,5 @@ export default defineNuxtConfig({
     public: {
       backendUrl: process.env.NUXT_PUBLIC_BACKEND_URL
     }
-  },
+  }
 })

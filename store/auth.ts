@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia';
-import { urlLogin, urlRegister } from '~/utils';
 
 interface UserPayloadInterface {
     account: string;
@@ -22,7 +21,7 @@ export const useAuthStore = defineStore('auth', {
     actions: {
         async authenticateUser({ account, password }: UserPayloadInterface) {
             // useFetch from nuxt 3
-            const { data, pending }: any = await useFetch(urlLogin, {
+            const { data, pending }: any = await useFetch(urlApi().urlLogin, {
                 method: 'post',
                 headers: { 'Content-Type': 'application/json' },
                 body: {
@@ -45,7 +44,7 @@ export const useAuthStore = defineStore('auth', {
         },
         async registerUser({ name, gender, account, password }: UserRegisterPayLoadInterface) {
             // useFetch from nuxt 3
-            const { data, pending }: any = await useFetch(urlRegister, {
+            const { data, pending }: any = await useFetch(urlApi().urlRegister, {
                 method: 'post',
                 headers: { 'Content-Type': 'application/json' },
                 body: {

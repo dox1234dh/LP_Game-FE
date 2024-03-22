@@ -1,31 +1,30 @@
 <template>
-  <div>
-    <header>
-      <ul>
-        <li><nuxt-link to="/">Home</nuxt-link></li>
-        <li><nuxt-link to="/about">About</nuxt-link></li>
-        <li v-if="!authenticated" class="loginBtn" style="float: right">
-          <nuxt-link to="/login">Login</nuxt-link>
-        </li>
-        <li v-if="!authenticated" class="registerBtn" style="float: right">
-          <nuxt-link to="/register">Register</nuxt-link>
-        </li>
-        <li v-if="authenticated" class="loginBtn" style="float: right">
-          <nuxt-link @click="logout">Logout</nuxt-link>
-        </li>
-      </ul>
-    </header>
-    <div class="mainContent">
-      <slot />
-    </div>
-    <footer>
-      <h1>Footer</h1>
-    </footer>
+  <div class="mainContent">
+    <a-layout>
+      <a-layout-header :style="headerStyle"
+        ><ul>
+          <li><nuxt-link to="/">Home</nuxt-link></li>
+          <li><nuxt-link to="/about">About</nuxt-link></li>
+          <li v-if="!authenticated" class="loginBtn" style="float: right">
+            <nuxt-link to="/login">Login</nuxt-link>
+          </li>
+          <li v-if="!authenticated" class="registerBtn" style="float: right">
+            <nuxt-link to="/register">Register</nuxt-link>
+          </li>
+          <li v-if="authenticated" class="loginBtn" style="float: right">
+            <nuxt-link @click="logout">Logout</nuxt-link>
+          </li>
+        </ul></a-layout-header
+      >
+      <a-layout-content :style="contentStyle"><slot /></a-layout-content>
+      <a-layout-footer :style="footerStyle"><h1>Footer</h1></a-layout-footer>
+    </a-layout>
   </div>
 </template>
 <script lang="ts" setup>
 import { storeToRefs } from "pinia"; // import storeToRefs helper hook from pinia
 import { useAuthStore } from "~/store/auth"; // import the auth store we just created
+import type { CSSProperties } from "vue";
 
 const router = useRouter();
 
@@ -35,5 +34,34 @@ const { authenticated } = storeToRefs(useAuthStore()); // make authenticated sta
 const logout = () => {
   logUserOut();
   router.push("/login");
+};
+const headerStyle: CSSProperties = {
+  textAlign: "center",
+  color: "#fff",
+  height: 64,
+  paddingInline: 50,
+  lineHeight: "64px",
+  backgroundColor: "#7dbcea",
+};
+
+const contentStyle: CSSProperties = {
+  textAlign: "center",
+  minHeight: 120,
+  lineHeight: "120px",
+  color: "#fff",
+  backgroundColor: "#108ee9",
+};
+
+const siderStyle: CSSProperties = {
+  textAlign: "center",
+  lineHeight: "120px",
+  color: "#fff",
+  backgroundColor: "#3ba0e9",
+};
+
+const footerStyle: CSSProperties = {
+  textAlign: "center",
+  color: "#fff",
+  backgroundColor: "#7dbcea",
 };
 </script>
