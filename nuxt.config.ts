@@ -11,6 +11,12 @@ export default defineNuxtConfig({
   plugins: [
     { src: 'node_modules/nuxtjs-phaser', mode: 'client' },
   ],
-  modules: ['@pinia/nuxt','@nuxtjs/tailwindcss'],
+  modules: ['@pinia/nuxt','@nuxtjs/tailwindcss','@element-plus/nuxt'],
   typescript: { tsConfig: { compilerOptions: { baseUrl: ".", }, }, },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 })
