@@ -19,4 +19,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  runtimeConfig: {
+    public: {
+      backendUrl: process.env.NUXT_PUBLIC_BACKEND_URL
+    }
+  },
 })
