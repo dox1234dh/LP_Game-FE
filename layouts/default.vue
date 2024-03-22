@@ -1,25 +1,23 @@
 <template>
-  <div class="mainContent">
-    <a-layout>
-      <a-layout-header class="headerStyle"
-        ><ul>
-          <li><nuxt-link to="/">Home</nuxt-link></li>
-          <li><nuxt-link to="/about">About</nuxt-link></li>
-          <li v-if="!authenticated" class="loginBtn" style="float: right">
-            <nuxt-link to="/login">Login</nuxt-link>
-          </li>
-          <li v-if="!authenticated" class="registerBtn" style="float: right">
-            <nuxt-link to="/register">Register</nuxt-link>
-          </li>
-          <li v-if="authenticated" class="loginBtn" style="float: right">
-            <nuxt-link @click="logout">Logout</nuxt-link>
-          </li>
-        </ul></a-layout-header
-      >
-      <a-layout-content class="contentStyle"><slot /></a-layout-content>
-      <a-layout-footer class="footerStyle"><h1>Footer</h1></a-layout-footer>
-    </a-layout>
-  </div>
+  <a-layout>
+    <a-layout-header class="headerStyle"
+      ><ul>
+        <li><nuxt-link to="/">Home</nuxt-link></li>
+        <li><nuxt-link to="/about">About</nuxt-link></li>
+        <li v-if="!authenticated" class="loginBtn" style="float: right">
+          <nuxt-link to="/login">Login</nuxt-link>
+        </li>
+        <li v-if="!authenticated" class="registerBtn" style="float: right">
+          <nuxt-link to="/register">Register</nuxt-link>
+        </li>
+        <li v-if="authenticated" class="loginBtn" style="float: right">
+          <nuxt-link @click="logout">Logout</nuxt-link>
+        </li>
+      </ul></a-layout-header
+    >
+    <a-layout-content class="contentStyle"><slot /></a-layout-content>
+    <a-layout-footer class="footerStyle"><h1>Footer</h1></a-layout-footer>
+  </a-layout>
 </template>
 <script lang="ts" setup>
 import { storeToRefs } from "pinia"; // import storeToRefs helper hook from pinia
