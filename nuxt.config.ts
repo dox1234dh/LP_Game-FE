@@ -7,10 +7,10 @@ export default defineNuxtConfig({
       title: 'LP GAME',
     },
   },
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.scss'],
   plugins: [
     { src: 'node_modules/nuxtjs-phaser', mode: 'client' },
   ],
-  modules: ['@pinia/nuxt'],
+  modules: ['@pinia/nuxt','@nuxtjs/tailwindcss'],
   typescript: { tsConfig: { compilerOptions: { baseUrl: ".", }, }, },
 })

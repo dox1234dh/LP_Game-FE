@@ -1,9 +1,18 @@
 import { defineStore } from 'pinia';
+import { urlLogin, urlRegister } from '~/utils';
 
 interface UserPayloadInterface {
     account: string;
     password: string;
 }
+
+interface UserRegisterPayLoadInterface {
+    name: string;
+    gender: number;
+    account: string;
+    password: string;
+}
+
 
 export const useAuthStore = defineStore('auth', {
     state: () => ({
@@ -13,7 +22,7 @@ export const useAuthStore = defineStore('auth', {
     actions: {
         async authenticateUser({ account, password }: UserPayloadInterface) {
             // useFetch from nuxt 3
-            const { data, pending }: any = await useFetch(<string>process.env.BACKEND_URL, {
+            const { data, pending }: any = await useFetch(urlLogin, {
                 method: 'post',
                 headers: { 'Content-Type': 'application/json' },
                 body: {
@@ -34,5 +43,22 @@ export const useAuthStore = defineStore('auth', {
             this.authenticated = false; // set authenticated  state value to false
             token.value = null; // clear the token cookie
         },
+        async registerUser({ name, gender, account, password }: UserRegisterPayLoadInterface) {
+            // useFetch from nuxt 3
+            const { data, pending }: any = await useFetch(urlRegister, {
+                method: 'post',
+                headers: { 'Content-Type': 'application/json' },
+                body: {
+                    name,
+                    gender,
+                    account,
+                    password,
+                },
+            });
+            this.loading = pending;
+            if (data.value) {
+                // success
+            }
+        }
     },
 });
