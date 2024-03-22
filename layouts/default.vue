@@ -1,7 +1,7 @@
 <template>
   <div class="mainContent">
     <a-layout>
-      <a-layout-header :style="headerStyle"
+      <a-layout-header class="headerStyle"
         ><ul>
           <li><nuxt-link to="/">Home</nuxt-link></li>
           <li><nuxt-link to="/about">About</nuxt-link></li>
@@ -16,8 +16,8 @@
           </li>
         </ul></a-layout-header
       >
-      <a-layout-content :style="contentStyle"><slot /></a-layout-content>
-      <a-layout-footer :style="footerStyle"><h1>Footer</h1></a-layout-footer>
+      <a-layout-content class="contentStyle"><slot /></a-layout-content>
+      <a-layout-footer class="footerStyle"><h1>Footer</h1></a-layout-footer>
     </a-layout>
   </div>
 </template>
