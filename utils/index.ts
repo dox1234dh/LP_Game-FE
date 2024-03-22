@@ -1,2 +1,3 @@
-export const urlLogin : string = <string>process.env.BACKEND_URL + '/auth/signin';
-export const urlRegister : string = <string>process.env.BACKEND_URL + '/auth/signup';
+const config = useRuntimeConfig()
+export const urlLogin : string = <string>config.backendUrl + '/auth/signin';
+export const urlRegister : string = <string>config.backendUrl + '/auth/signup';
