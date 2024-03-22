@@ -35,33 +35,29 @@ const logout = () => {
   logUserOut();
   router.push("/login");
 };
-const headerStyle: CSSProperties = {
-  textAlign: "center",
-  color: "#fff",
-  height: 64,
-  paddingInline: 50,
-  lineHeight: "64px",
-  backgroundColor: "#7dbcea",
-};
-
-const contentStyle: CSSProperties = {
-  textAlign: "center",
-  minHeight: 120,
-  lineHeight: "120px",
-  color: "#fff",
-  backgroundColor: "#108ee9",
-};
-
-const siderStyle: CSSProperties = {
-  textAlign: "center",
-  lineHeight: "120px",
-  color: "#fff",
-  backgroundColor: "#3ba0e9",
-};
-
-const footerStyle: CSSProperties = {
-  textAlign: "center",
-  color: "#fff",
-  backgroundColor: "#7dbcea",
-};
 </script>
+<style lang="scss" scoped>
+.headerStyle {
+  text-align: "center";
+  color: "#fff";
+  height: 15vh;
+  padding-inline: 50;
+  line-height: "64px";
+  background-color: "#7dbcea";
+}
+
+.contentStyle {
+  text-align: "center";
+  min-height: 70vh;
+  line-height: "120px";
+  color: "#fff";
+  background-color: "#108ee9";
+}
+
+.footerStyle {
+  text-align: "center";
+  color: "#fff";
+  height: 15vh;
+  background-color: "#7dbcea";
+}
+</style>
