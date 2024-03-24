@@ -35,7 +35,10 @@ export const useAuthStore = defineStore('auth', {
                 const token = useCookie('token'); // useCookie new hook in nuxt 3
                 token.value = data?.value?.accessToken; // set token to cookie
                 this.authenticated = true; // set authenticated  state value to true
+                return;
             }
+            this.authenticated = false;
+            return;
         },
         logUserOut() {
             const token = useCookie('token'); // useCookie new hook in nuxt 3
@@ -57,7 +60,9 @@ export const useAuthStore = defineStore('auth', {
             this.loading = pending;
             if (data.value) {
                 // success
+                return true
             }
+            return false
         }
     },
 });
