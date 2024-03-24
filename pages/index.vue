@@ -4,7 +4,7 @@
     <a-button class="bg-[#1677ff]" type="primary" size="large" :disabled="btnBack" @click="backLayer">Quay
       lại</a-button>
     <div class="flex justify-center items-center">
-      <div class="grid grid-cols-4 gap-10">
+      <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 3xl:grid-cols-5 gap-10">
         <!-- tree map list with level -->
         <a-card v-for="(item, key) in currentList" :key="key" hoverable style="width: 350px">
           <template #cover>
