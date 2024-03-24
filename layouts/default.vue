@@ -22,7 +22,6 @@
 <script lang="ts" setup>
 import { storeToRefs } from "pinia"; // import storeToRefs helper hook from pinia
 import { useAuthStore } from "~/store/auth"; // import the auth store we just created
-import type { CSSProperties } from "vue";
 
 const router = useRouter();
 
@@ -36,26 +35,26 @@ const logout = () => {
 </script>
 <style lang="scss" scoped>
 .headerStyle {
-  text-align: "center";
-  color: "#fff";
+  text-align: center;
+  color: #fff;
   height: 15vh;
-  padding-inline: 50;
+  padding-inline: 0;
   line-height: "64px";
-  background-color: "#7dbcea";
+  background-color: #7dbcea;
 }
 
 .contentStyle {
-  text-align: "center";
+  text-align: center;
   min-height: 70vh;
-  line-height: "120px";
-  color: "#fff";
-  background-color: "#108ee9";
+  line-height: 120px;
+  color: #fff;
+  background-color: #108ee9;
 }
 
 .footerStyle {
-  text-align: "center";
-  color: "#fff";
+  text-align: center;
+  color: #fff;
   height: 15vh;
-  background-color: "#7dbcea";
+  background-color: #7dbcea;
 }
 </style>

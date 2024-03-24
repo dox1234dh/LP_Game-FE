@@ -2,13 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply m-0 p-0;
-}
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
   ul {
     list-style-type: none;
     margin: 0;
@@ -30,7 +24,7 @@ header {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0 16px;
     text-decoration: none;
     cursor: pointer;
   }
