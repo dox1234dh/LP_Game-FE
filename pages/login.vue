@@ -1,5 +1,5 @@
 <template>
-  <a-card title="Đăng nhập" style="width: 40%">
+  <a-card title="Đăng nhập" class="w-full lg:w-3/5">
     <template #extra>
       <div class="space-x-1">
         <span>Không có tài khoản?</span>
@@ -8,7 +8,7 @@
     </template>
     <div>
       <a-form class="space-y-10" :model="user" name="login" autocomplete="off" @finish="onFinish"
-        :label-col="{ span: 3 }" :wrapper-col="{ span: 21 }" @finishFailed="onFinishFailed">
+        :label-col="{ span: 6 , xs: {span: 3} }" :wrapper-col="{ span: 9, xs: {span:21} }" @finishFailed="onFinishFailed">
         <a-form-item label="Tài khoản" name="account" :rules="[{ required: true, message: 'Xin hãy nhập tài khoản!' }]">
           <a-input v-model:value="user.account" />
         </a-form-item>
@@ -17,8 +17,9 @@
           <a-input-password v-model:value="user.password" />
         </a-form-item>
 
-        <a-form-item :wrapper-col="{ offset: 6, span: 12 }">
-          <a-button class="w-full bg-[#1677ff]" type="primary" html-type="submit" :loading="loadingLogin">Đăng nhập</a-button>
+        <a-form-item :wrapper-col="{ offset: 0, md: { offset: 6, span: 12 } }">
+          <a-button class="w-full bg-[#1677ff]" type="primary" html-type="submit" :loading="loadingLogin">Đăng
+            nhập</a-button>
         </a-form-item>
       </a-form>
     </div>

@@ -7,7 +7,7 @@
                     nghiệm ứng dụng văn học vào trò
                     chơi
                 </span>
-                <div class="flex w-full h-full justify-center items-center flex-col space-y-5">
+                <div class="flex px-4 md:px-0 w-full h-full justify-center items-center flex-col space-y-5">
                     <slot />
                 </div>
             </div>
