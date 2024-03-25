@@ -10,7 +10,12 @@ export default defineNuxtConfig({
   plugins: [
     { src: 'node_modules/nuxtjs-phaser', mode: 'client' },
   ],
-  modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss', '@ant-design-vue/nuxt'],
+  modules: [
+    '@pinia/nuxt',
+    '@nuxtjs/tailwindcss',
+    '@ant-design-vue/nuxt',
+    "@nuxt/image"
+  ],
   typescript: { tsConfig: { compilerOptions: { baseUrl: ".", }, }, },
   postcss: {
     plugins: {

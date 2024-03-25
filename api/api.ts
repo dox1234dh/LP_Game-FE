@@ -10,7 +10,7 @@ interface listQuestion {
 
 export async function apiSavePlayLog({ score, stage, status }: savePlayLog) {
     const token = useCookie('token');
-    const { data, pending }: any = await useFetch(urlApi().urlSavePlayLog, {
+    const { data, pending }: any = await $fetch(urlApi().urlSavePlayLog, {
         method: 'post',
         headers: <any>{ 'Content-Type': 'application/json', 'x-access-token': token.value, },
         body: {
@@ -28,13 +28,12 @@ export async function apiSavePlayLog({ score, stage, status }: savePlayLog) {
 
 export async function apiListQuestion({ id }: listQuestion) {
     const token = useCookie('token');
-    const { data, pending }: any = await useFetch(urlApi().urlListQuestion + `/${id}`, {
+    const data: any = await $fetch(urlApi().urlListQuestion + `/${id}`, {
         method: 'get',
         headers: <any>{ 'x-access-token': token.value, },
     });
-
-    if (data.value) {
-        return data?.value;
+    if (data) {
+        return data;
     }
     return null;
 }
