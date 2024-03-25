@@ -8,8 +8,9 @@
 import { message } from "ant-design-vue";
 import { onMounted, reactive, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import { apiListQuestion, apiSavePlayLog } from "../api/api";
+import { apiListQuestion, apiSavePlayLog } from "~/api/api";
 import { ExceptionMap } from "ant-design-vue/es/result";
+import ConversationScreen from "../components/ConversationScreen.vue"
 const route = useRoute();
 const router = useRouter();
 let id = ref(0);
@@ -36,7 +37,7 @@ onMounted(async () => {
       data = <any>await getQuestion(object);
     } catch (error) {
       message.error("Có lỗi xảy ra");
-      router.push("/");
+      await router.push("/");
     }
   }
 });
