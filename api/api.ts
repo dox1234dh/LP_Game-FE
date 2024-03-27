@@ -20,7 +20,7 @@ export async function apiSavePlayLog({ score, stage, status }: savePlayLog) {
         },
     });
 
-    if (data.value) {
+    if (data) {
         return true;
     }
     return false;

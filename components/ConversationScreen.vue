@@ -6,9 +6,6 @@
       class="h-full relative bg-[url('/assets/images/background.jpg')] bg-repeat-round bg-opacity-40 z-0"
       @click="handleClickTyping"
   >
-    <div class="absolute flex py-1 pl-1 z-30">
-      <a-button class="bg-white" type="default" @click="()=>router.back()">Quay lại</a-button>
-    </div>
     <div class="absolute inset-0 h-full bg-black bg-opacity-60"></div>
     <!-- Main Character z-index 1 -->
     <div class="absolute left-0 bottom-0 z-10">
@@ -91,6 +88,7 @@ let listBtn = ref([])
 let isShowImage = ref(false);
 let isShowButtonGroup = ref(false);
 let isImgOrVideo = ref(null);
+const emit = defineEmits(['playGame'])
 
 function typeWriter() {
   if (i < textTemp.value.length) {
@@ -118,7 +116,7 @@ async function handleTyping(speaker: number) {
 async function loopConversation() {
   if (indexConversation.value === conversationData.value.length) {
     //  play game emit data
-    console.log("end of script")
+    emit('playGame', true);
     return;
   }
   textTemp.value = conversationData.value[indexConversation.value].text;
@@ -130,6 +128,7 @@ async function loopConversation() {
 function handleEventClick(item: any) {
   if (item.action === 0) {
     //  emit to play game
+    emit('playGame', true);
   } else if (item.action === 1) {
     indexConversation.value = item.pos;
     isShowButtonGroup.value = false;
