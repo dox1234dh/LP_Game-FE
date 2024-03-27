@@ -1,5 +1,8 @@
 <template>
   <div class="w-full h-full grid grid-cols-10">
+    <audio class="hidden" controls autoplay loop>
+      <source src="~/public/BGFishing.mp3" type="audio/mpeg">
+    </audio>
     <iframe v-on:load="onLoadIframe" class="w-full h-full col-span-7" id="game" ref="gameRef"
             :src="'/game.html'"></iframe>
     <a-card class="col-span-3 space-y-6" title="Bảng câu hỏi">
