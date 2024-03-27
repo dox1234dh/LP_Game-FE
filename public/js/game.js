@@ -167,6 +167,7 @@ class game {
                         }
                         // chuyển sang câu tiếp theo
                         idxQuestion++;
+                        this.emitIndexQuestion();
                         N = listQuestion[idxQuestion]?.listAnswers.length
                         this.gg[i].alive = false;
                         this.score += this.gg[i].score;
@@ -313,6 +314,11 @@ class game {
         window.parent.postMessage({
             score: this.score,
             status: status
+        }, "*");
+    }
+    emitIndexQuestion() {
+        window.parent.postMessage({
+            currentQuestionIndex: idxQuestion
         }, "*");
     }
 }
