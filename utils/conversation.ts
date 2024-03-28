@@ -18,47 +18,200 @@ export const conversation = [
     // 1-1
     {
         id: 3,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 1-2
     {
         id: 9,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 1-3
     {
         id: 7,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 1-4
     {
         id: 16,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 1-2-1
     {
         id: 10,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 1-2-2
     {
         id: 11,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 1-2-3
     {
         id: 12,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 1-3-1
     {
         id: 17,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 1-4-1
     {
         id: 18,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 2-1
     {
@@ -220,42 +373,178 @@ export const conversation = [
     // 2-2
     {
         id: 19,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 2-3
     {
         id: 20,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 2-4
     {
         id: 21,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 2-5
     {
         id: 22,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 2-2-1
     {
         id: 23,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 2-3-1
     {
         id: 24,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 2-4-1
     {
         id: 25,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 2-5-1
     {
         id: 26,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 3-1
     {
@@ -484,46 +773,199 @@ export const conversation = [
     // 3-2
     {
         id: 5,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 3-3
     {
         id: 6,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 3-2-1
     {
         id: 13,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 3-3-1
     {
         id: 14,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 4-1
     {
         id: 4,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 4-2
     {
         id: 27,
-        conversation: []
+        conversation: [
+            // {
+            //     actionType: ActionType.Choose,
+            //     speaker: Character.System,
+            //     text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+            //     buttons: [
+            //         {
+            //             text: "Quay lại",
+            //             action: ButtonAction.RouterConversation,
+            //             pos: 0
+            //         },
+            //         {
+            //             text: "Làm bài quiz",
+            //             action: ButtonAction.PlayGame,
+            //         }
+            //     ]
+            // },
+        ]
     },
     // 4-3
     {
         id: 8,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
     // 4-2-1
     {
         id: 28,
-        conversation: []
+        conversation: [
+            // {
+            //     actionType: ActionType.Choose,
+            //     speaker: Character.System,
+            //     text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+            //     buttons: [
+            //         {
+            //             text: "Quay lại",
+            //             action: ButtonAction.RouterConversation,
+            //             pos: 0
+            //         },
+            //         {
+            //             text: "Làm bài quiz",
+            //             action: ButtonAction.PlayGame,
+            //         }
+            //     ]
+            // },
+        ]
     },
     // 4-3-1
     {
         id: 15,
-        conversation: []
+        conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+        ]
     },
 ]
