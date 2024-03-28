@@ -20,6 +20,271 @@ export const conversation = [
         id: 3,
         conversation: [
             {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Xin chào, tôi là Hướng dẫn viên trên chuyến tầu mang số hiệu MỘT THỜI VÀNG SON, xuất phát từ ga 2024 đến điểm cuối là ga 1500. Đã sẵn sàng khám phá cuộc hành trình này?",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ]
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Cảm ơn bạn đã sẵn sàng đồng hành cùng tôi. Bây giờ hãy lựa chọn những điều mà bạn muốn tìm kiếm nhé!",
+                buttons: [
+                    {
+                        text: "Văn học trung đại Việt Nam diễn ra trong khoảng thời gian nào?",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Văn học trung đại Việt Nam gồm mấy bộ phận?",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Loại hình và thể loại văn học trung đại Việt Nam được phân chia như thế nào?",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Lực lượng sáng tác chính của văn học trung đại Việt Nam?",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Văn học trung đại Việt Nam đã chịu ảnh hưởng của những loại hình văn học nào?",
+                        action: ButtonAction.RouterConversation,
+                        pos: 10
+                    },
+                    {
+                        text: "Cảm hứng sáng tác chính của văn học trung đại Việt Nam?",
+                        action: ButtonAction.RouterConversation,
+                        pos: 12
+                    },
+                    {
+                        text: "Đặc trưng nổi bật nhất của văn học trung đại Việt Nam?",
+                        action: ButtonAction.RouterConversation,
+                        pos: 14
+                    },
+                    {
+                        text: "Những quan niệm về bản chất- chức năng của văn học trung đại Việt Nam",
+                        action: ButtonAction.RouterConversation,
+                        pos: 16
+                    },
+                    {
+                        text: "Những gương mặt tiêu biểu nhất cho nền văn học trung đại đồ sộ ở Việt Nam?",
+                        action: ButtonAction.RouterConversation,
+                        pos: 18
+                    },
+                    {
+                        text: "Làm bài quiz",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.ShowImage,
+                text: "Văn học trung đại Việt Nam bao gồm những tác phẩm được sáng tác, hình thành và phát triển trong khoảng thời gian từ TK XVI đến TK XIX (thời kỳ phong kiến Việt Nam - thời kỳ bắt đầu tự chủ của dân tộc đến khi Pháp thuộc)\n" +
+                    "\n" +
+                    "*Chú thích: Thời kì phong kiến- chế độ quân chủ chuyên chế- chế độ đất nước tồn tại dưới dạng Vua là người trị vì cao nhất, phản ánh hình thức truyền nối và chiếm hữu đất đai; cấu trúc xã hội xoay quanh những mối quan hệ xuất phát từ việc sở hữu đất đai để đổi lấy lao động, địa chủ bóc lột nông dân…\n",
+                image: '/conversation-images/10.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.ShowImage,
+                text: "Văn học trung đại Việt Nam gồm 2 bộ phận chính:\n" +
+                    "+ Văn học viết bằng chữ Hán\n" +
+                    "+ Văn học viết bằng chữ Nôm\n",
+                image: '/conversation-images/11.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.ShowImage,
+                text: "Văn học trung đại Việt Nam được chia làm hai loại hình, mỗi loại hình lại có những thể loại khác nhau được sử dụng:",
+                image: '/conversation-images/12.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.ShowImage,
+                text: "Tác giả là người Việt Nam sáng tác (chủ yếu là tầng lớp trí thức phong kiến: vua, quan, tăng lữ, Nho sĩ, nhà sư,…)",
+                image: '/conversation-images/13.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.ShowImage,
+                text: "-\tVăn học dân gian – lấy văn học dân gian làm nền tảng (đề tài, ngôn ngữ, thể thơ, cốt truyện, nghệ thuật trữ tình tự sự, quan niệm “bất thành văn” “phi chính thống”…) \n" +
+                    "-\tVăn học cổ điển Trung Hoa (tư tưởng, thể thơ, thi liệu, quan điểm sáng tác,…)\n" +
+                    "Chọn lọc, sáng tạo, biến đổi phù hợp với đặc điểm dân tộc và thời đại con người đất Việt.\n",
+                image: '/conversation-images/14.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.ShowImage,
+                text: "-\tChủ nghĩa yêu nước – gắn với vận mệnh đất nước \n" +
+                    "-\tChủ nghĩa nhân đạo – gắn với số phận con người\n" +
+                    "\tLuôn gắn bó với vận mệnh quốc gia, dân tộc, thể hiện rõ tinh thần yêu nước và đề cao các giá trị nhân văn, nhân đạo.",
+                image: '/conversation-images/15.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.ShowImage,
+                text: "Tính quy phạm và phá vỡ tính quy phạm luôn là những đặc trưng điển hình và nổi bật nhất trong những sáng ở thời kì này từ quan điểm sáng tác, kiểu tư duy nghệ thuật, hình thức thể loại, hệ thống thi liệu và các thủ pháp ngôn ngữ,… \n" +
+                    "Tuy luôn được quy định chặt chẽ và có tính khuôn mẫu, song một số đặc điểm quy phạm bị phá vỡ vẫn thường xuất hiện, thể hiện tính dân tộc và ý thức cá tính của từng tác giả,…\n",
+                image: '/conversation-images/16.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.ShowImage,
+                text: "Chức năng giáo huấn: “văn dĩ tải đạo” , “thi dĩ ngôn chí” của Nho giáo ảnh hướng đến Lễ kí, \n" +
+                    "\tThi có chức năng giáo dục đạo lí, cần đạt tiêu chuẩn “ôn tồn hòa nhã, nhẹ nhàng mềm dẻo, thành thật hết lòng, đầy đặn không hời hợt bạc bẽo”.\n" +
+                    "Chức năng mang tính chính thống.\n" +
+                    "Chức năng thẩm mỹ: \n" +
+                    "+ Theo quan niệm VHCN, quan niệm Nho gia chính thống xác định tiêu chuẩn cửa cái đẹp trong văn học nhà nho – “lấy ôn nhu đôn hậu làm gốc nhà thơ”…\n" +
+                    "+ Theo văn học nghệ thuật,”ý thức tự giác văn học”…\n" +
+                    "\n" +
+                    "Chức năng nhận thức- tham nhập hiện thực:\n" +
+                    "Văn học quan tâm đến tất cả những vấn đề thiên cốt của đời sống con người; có tham vọng góp phần giải quyết những nhu cầu tinh thần, vật chất của đời sống con người – “Văn học là nhân học”.\n" +
+                    "\n" +
+                    "Chức năng giải trí-phúng thích (trào phúng):\n" +
+                    "Quan niệm này được bộc lộ gián tiếp qua những sáng tác chữ Nôm; đặc biệt là tiếng cười trào phúng mang đậm chất sống của văn học dân gian, đi ngược lại tinh thần “mỹ thích” của văn chương nhà Nho…\n" +
+                    "(ví dụ trong phú thơ Nôm của Hồ Xuân Hương, Phạm Thái, Nguyễn Công Trứ, Nguyễn Quý Tân,…)\n" +
+                    "\n",
+                image: '/conversation-images/17.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.ShowImage,
+                text: "-\tTrần Nhân Tông (vị vua thứ 3 của đời nhà Trần, sau Trần Thánh Tông.)\n" +
+                    "-\tNguyễn Trãi\n" +
+                    "-\tNguyễn Du\n" +
+                    "-\tHồ Xuân Hương\n" +
+                    "-\tNguyễn Khuyến\n" +
+                    "-\tBà Huyện Thanh Quan\n" +
+                    "-\tĐoàn Thị Điểm\n" +
+                    "-\tTrần Quốc Tuấn\n" +
+                    "-\tChu Văn An\n",
+                image: '/conversation-images/18.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
@@ -863,6 +1128,160 @@ export const conversation = [
         id: 4,
         conversation: [
             {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Xin chào, tôi là Hướng dẫn viên trên chuyến tàu mang số hiệu ĐẤT NƯỚC ĐỔI MỚI. Bạn đã sẵn sàng khám phá cuộc hành trình này?",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ]
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Cảm ơn bạn đã sẵn sàng đồng hành cùng tôi. Bây giờ hãy lựa chọn những điều mà bạn muốn tìm hiểu nhé!",
+                buttons: [
+                    {
+                        text: "Bối cảnh lịch sử Việt Nam sau năm 1975",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Văn học Việt Nam sau năm 1975",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Bối cảnh Việt Nam trong thế kỉ 21",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Văn học Việt Nam thế kỉ 21",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "1. Tình hình đất nước ta sau Đại thắng mùa xuân năm 1975 và những nhiệm vụ trước mắt.\n" +
+                    "a. Thuận lợi\n" +
+                    "- Công cuộc xây dựng chủ nghĩa xã hội ở miền Bắc (1954 – 1975) đã đạt được những thành tựu to lớn và toàn diện, xây dựng được những cơ sở vật chất – kĩ thuật ban đầu của chủ nghĩa xã hội.\n" +
+                    "- Miền Nam được giải phóng hoàn toàn, hai miền Nam – Bắc được thống nhất. \n" +
+                    "b. Khó khăn\n" +
+                    "- Ở miền Bắc, hai cuộc chiến tranh phá hoại của Mĩ đã tàn phá nặng nề khiến cho nền kinh tế nông nghiệp bị lạc hậu.\n" +
+                    "- Ở miền Nam. hậu quả 30 năm chiến tranh nặng nề đã để lại những tàn dư của chế độ thực dân mới.\n" +
+                    "=> Chính vì vậy, nhiệm vụ đặt ra của cả hai miền là hoàn thành thống nhất đất nước về mặt nhà nước, khắc phục hậu quả của chiến tranh, khôi phục và phát triển kinh tế, xã hội.\n" +
+                    "\n" +
+                    "Đọc thêm về quá trình hoàn thành thống nhất đất nước về mặt nhà nước tại: https://tuyensinh.ussh.edu.vn/Mon-Su-Viet-Nam-giai-doan-1975--2000.html\n" +
+                    "\n" +
+                    "2. Đất nước trên đường đổi mới đi lên chủ nghĩa xã hội\n" +
+                    "Trải qua 10 năm thực hiện hai kế hoạch 5 năm (1976 – 1980) và (1981 - 1985), Việt Nam đã đạt được những kết quả nhất định trên cả hai phương diện xây dựng và bảo vệ Tổ quốc, song cũng gặp nhiều khó khăn, thách thức. Để khắc phục những sai lầm, khuyết điểm, đưa đất nước vượt qua khủng hoảng, vững bước tiến lên chủ nghĩa xã hội, chúng ta phải tiến hành công cuộc đổi mới.\n" +
+                    "Xem thêm về đường lối đổi mới tại:\n" +
+                    "https://tuyensinh.ussh.edu.vn/Mon-Su-Viet-Nam-giai-doan-1975--2000.html\n" +
+                    "\n" +
+                    "3. Thành tựu bước đầu của sự nghiệp đổi mới (1986 – 2000)\n" +
+                    "a. Về kinh tế\n" +
+                    "- Thực hiện Ba chương trình kinh tế lớn (lương thực – thực phẩm, hàng tiêu dùng và hàng xuất khẩu).\n" +
+                    "- Về lương thực, thực phẩm, từ thiếu chỗ ăn thì đến năm 1990, Việt Nam đã đáp ứng nhu cầu trong nước, có dự trữ và xuất khẩu.\n" +
+                    "- Hàng tiêu dùng trên thị trường dồi dào, đa dạng mẫu mã, chất lượng ngày càng nâng cao.\n" +
+                    "- Kinh tế đối ngoại ngày càng được mở rộng, hàng xuất khẩu ngày càng tăng.\n" +
+                    "- Đến năm 1996, Việt Nam đã thoát khỏi tình trạng khủng hoảng về kinh tế - xã hội. \n" +
+                    "b. Về chính trị - xã hội\n" +
+                    "- Tình hình chính trị - xã hội cơ bản ổn định, quốc phòng an ninh được tăng cường.\n" +
+                    "- Đã giải quyết tốt hơn các vấn đề về xã hội như lao động và việc làm, xóa đói, giảm nghèo, phát triển các ngành ý tế, giáo dục, khoa học và công nghệ.\n" +
+                    "- Mở rộng quan hệ đối ngoại, bình thường hóa và phát triển quan hệ ngoại giao với Trung Quốc, Hoa Kì,..; chủ động hội nhập quốc tế và tham gia các tổ chức quốc tế như ASEAN, APEC, WTO,...\n",
+                image: '/conversation-images/19.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "1. Giai đoạn 1975 – 1985 được coi là giai đoạn khởi động của văn học thời kỳ đổi mới. Đề tài chiến tranh và người lính vẫn là đề tài cơ bản được các nhà thơ lựa chọn. Ta có thể kể đến “Bài ca quê hương” của Tố Hữu, “Bài ca chim Chơ-rao” của nhà thơ Thu Bồn,...\n" +
+                    "Khoảng thời gian mười năm sau chiến tranh, trong lĩnh vực sáng tác, khuynh hướng đổi mới chưa trở thành một phong trào rầm rộ. Những nhà văn đi tiên phong trong công cuộc đổi mới này là Nguyễn Minh Châu, Ma Văn Kháng, Lê Lựu,...Đóng góp của họ cho công cuộc đổi mới văn học ở Việt nam chủ yếu là ở lĩnh vực văn xuôi. Tập truyện ngắn “Bến quê” của Nguyễn Minh Châu, tiểu thuyết “Mùa lá rụng trong vườn” của Ma Văn Kháng,...từng gây được những tiếng vang rất lớn.\n" +
+                    "\n" +
+                    "2. Giai đoạn 1986 – 1991 được coi là giai đoạn sôi nổi nhất của đời sống văn nghệ ở Việt Nam trong thời kì đổi mới. Trong mọi lĩnh vực nghệ thuật, từ văn học hay sân khấu, điển ảnh, sự đổi mới diễn ra vô cùng quyết liệt. Văn học dịch vẫn tiếp tục phát triển. Và giữ vai trò chủ công trong đổi mới văn học chính là hoạt động lý luận, phê bình văn học và hoạt động sáng tác của các nhà văn, nhà thơ. \n" +
+                    "Các tác giả nổi tiếng trong giai đoạn này: Phạm Thị Hoài, Bảo Ninh, Dương Thu Hương, Nguyễn Duy, Thanh Thảo,...\n" +
+                    "\n" +
+                    "Xem thêm tại: https://khoavanhue.husc.edu.vn/van-hoc-viet-nam-1975-1991-nhin-lai-cac-buoc-di-lang-nghe-cac-tieng-noi/ \n",
+                image: '/conversation-images/20.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Bối cảnh Việt Nam trong thế kỉ XXI\n" +
+                    "Nhân loại đang ở trong thế kỉ XXI, đó là giai đoạn mà toàn cầu hóa diễn ra mạnh mẽ, quan hệ song phương, đa phương giữa các quốc gia ngày càng sâu rộng và đặc biệt là cuộc cách mạng khoa học – công nghệ đã có những bước phát triển nhảy vọt, dần dần làm chuyển dịch nhanh cơ cấu kinh tế và biểu đổi sâu sắc các lĩnh vực của đời sống xã hội.  \n" +
+                    "Việt Nam ta cũng không nằm ngoài sự phát triển mạnh mẽ đó. Thành tựu sau 15 năm đổi mới đã tạo thế và lực thúc đẩy công cuộc đổi mới của nước ta đi vào chiều sâu. Việt Nam đang ngày càng nỗ lực ổn định nền kinh tế vĩ mô trong thời gian dài và đồng thời hỗ trợ, tạo điều kiện cho cuộc sống của người dân ngày càng phát triển. Bên cạnh đó, chúng ta vẫn cần phải đối mặt với những thách thức như lạm phát kinh tế, nạn tham những quan liêu, “diễn biến hòa bình” do các thế lực thù địch gây ra.\n",
+                image: '/conversation-images/21.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Văn học thế kỉ 21 vẫn đang trên mạch tiếp nối đổi mới quan niệm nghệ thuật về hiện thực và con người. Những thay đổi cơ cấu đời sống và những thiết chế xã hội theo cơ chế kinh tế thị trường, theo tinh thần hội nhập quốc tế cũng như những nhu cầu đổi mới, hiện đại hoá thơ ca…đã làm cho nhu cầu thể hiện tình cảm và quan hệ sống của con người cần có cách tiếp cận và lý giải khác hơn. Những nhu cầu thể hiện cá tính, thể hiện tính dục, tâm linh càng trở nên phổ biến.\n" +
+                    "Một số các tác giả tiêu biểu như: Nguyễn Khắc Trường. Tạ Duy Anh, Phan Thị Vàng Anh, Vi Thùy Linh,...\n"
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
@@ -884,6 +1303,7 @@ export const conversation = [
     {
         id: 27,
         conversation: [
+            // không có trong kiến thức phải làm
             // {
             //     actionType: ActionType.Choose,
             //     speaker: Character.System,
@@ -928,6 +1348,7 @@ export const conversation = [
     {
         id: 28,
         conversation: [
+            // không có trong kiến thức phải làm
             // {
             //     actionType: ActionType.Choose,
             //     speaker: Character.System,
