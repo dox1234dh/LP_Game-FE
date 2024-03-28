@@ -1367,6 +1367,94 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiêp theo nhé! ",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một nhà thơ được đánh giá là nhà thơ “mới nhất trong các nhà thơ mới” theo tác giả Thi nhân Việt Nam, được mệnh danh là “ông hoàng thơ tình”. Và là một trong những thành viên đầu tiên của nhóm Tự lực văn đoàn. Vậy, bạn có biết tôi nói đến nhà thơ nào không nhỉ? \n" +
+                    "--------------------------------------------------------------------------\n" +
+                    "Vâng, đó là nhà thơ Xuân Diệu! \n",
+                buttons: [
+                    {
+                        text: "Vài nét về tiểu sử, con người Xuân Diệu ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Khái quát sự nghiệp văn chương ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 5
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "VÀI NÉT VỀ TIỂU SỬ, CON NGƯỜI XUÂN DIỆU",
+                image: '/conversation-images/51.png'
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "*Đặc điểm con người Xuân Diệu \n" +
+                    "- Trong con người ông có sự chung thủy hai truyền thống quý báu của hai miền đất nước: \n" +
+                    "+ Xuân Diệu được kế thừa đức tính cần cù, tinh thần vượt khó đáng khâm phục của con người xứ Nghệ. \n" +
+                    "+ Hấp thụ cái nồng nàn, dạt dào của con người vùng biển đầy nắng gió Quy Nhơn, Bình Định. \n" +
+                    "-\tTuổi thanh niên ra Hà Nội học tú tài được sống giữa thiên nhiên xứ Bắc với bốn mùa giao chuyển rõ rệt, điều này lại giúp Xuân Diệu có thêm sự nhạy cảm, tinh tế. \n" +
+                    "-\tVào Huế học tú tài phần thứ hai, ông được tiếp xúc cới núi sông thơ mộng, buồn lặng lặng với cái mê li, lả lướt đắm đuối… \n" +
+                    "Có tâm hồn phong phú, chứa đựng nhiều cung bậc cảm xúc do từng sống, từng ở qua nhiều miền đất nước với đặc điểm thiên nhiên, truyền thống văn hóa đa dạng. \n",
+                image: '/conversation-images/52.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "*Với lòng say mê kính nghiệp, với khao khát cống hiến cho cuộc đời những áng thơ văn đầy sự sáng tạo, trong hơn nửa thế kỉ lao động, Xuân Diệu đã để lại cho nền văn học dân tộc một sự nghiệp đồ sộ: ",
+                image: '/conversation-images/53.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
@@ -1386,6 +1474,133 @@ export const conversation = [
     {
         id: 22,
         conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một nhà thơ có vị trí đặc biệt trong nền thơ ca Việt Nam hiện đại, ông có môt lối đi riêng, lối đi trở về với cội nguồn dân tộc. Là nhà thơ “chân quê” không lẫn với nhà thơ nào trong phong trào Thơ mới. Bạn có đoán được đó là nhà thơ nào không nhỉ? \n" +
+                    "---------------------------------------------------------------------------------------------------\n" +
+                    "Vâng, đó là nhà thơ Nguyễn Bính! \n",
+                buttons: [
+                    {
+                        text: "Vài nét về tiểu sử Nguyễn Bính",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Những cơ sở tạo nên phong cách nghệ thuật thơ Nguyễn Bính ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Sự nghiệp văn chương ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Một vài đặc sắc nghệ thuật và nội dung trong thơ Nguyễn Bính",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "VÀI NÉT VỀ TIỂU SỬ NGUYỄN BÍNH",
+                image: '/conversation-images/54.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "*Thuật ngữ văn học: “phong cách nghệ thuật” \n" +
+                    "- “Phong cách cần phải được định nghĩa như phương thức biểu hiện cách chiếm lĩnh hình tượng đối với cuộc sống như phương thức thuyết phục và thu hút độc giả.”- định nghĩa của M. Khrapchencô. \n" +
+                    "- Trong cuốn Từ điển thuật ngữ văn học của nhóm tác giả Lê Bá Hán, Trần Đình Sử, Nguyễn Khắc Phi chủ biên, nêu khái niệm: “Phong cách nghệ thuật là một phạm trù thẩm mĩ, chỉ sự thống nhất tương đối ổn định của hệ thống hình tượng, của các phương tiện biểu hiện nghệ thuật, nói lên cái nhìn độc đáo trong sáng tác của một nhà văn, trong tác phẩm riêng lẻ, trong trào lưu văn học hay trong văn học dân tộc khác”. \n",
+                image: '/conversation-images/55.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "*Nguyễn Bính làm thơ khá sớm và rất bền bỉ\n" +
+                    "- Tác phẩm được đăng báo đầu tiên của ông là bài thơ “Cô hái mơ”.\n" +
+                    "- Năm 1937, Nguyễn Bính gửi tập thơ “Tâm hồn tôi” dự thi và đã được giải thưởng của Tự lực văn đoàn. \n" +
+                    "- Nguyễn Bính được Nhà nước truy tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật vào năm 2000. \n",
+                image: '/conversation-images/56.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "MỘT VÀI ĐẶC SẮC NGHỆ THUẬT VÀ NỘI DUNG TRONG THƠ NGUYỄN BÍNH ",
+                image: '/conversation-images/57.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
