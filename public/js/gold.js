@@ -13,6 +13,12 @@ var answerC = new Image();
 answerC.src="images/SwordFish.png";
 var answerD = new Image();
 answerD.src="images/Tutle.png";
+var answerE = new Image();
+answerD.src="images/FishHurt.png";
+var answerF = new Image();
+answerD.src="images/Eel.png";
+var answerG = new Image();
+answerD.src="images/octopus2.png";
 
 
 class gold {
@@ -55,6 +61,24 @@ class gold {
                 this.width = this.game.getWidth() * 3;
                 this.height = this.game.getWidth() * 1.5;
                 this.IM = answerD;
+                break;
+            case 4:
+                this.speed = this.game.getWidth() / 5;
+                this.width = this.game.getWidth() * 3;
+                this.height = this.game.getWidth() * 1.5;
+                this.IM = answerE;
+                break;
+            case 5:
+                this.speed = this.game.getWidth() / 5;
+                this.width = this.game.getWidth() * 3;
+                this.height = this.game.getWidth() * 1.5;
+                this.IM = answerF;
+                break;
+            case 6:
+                this.speed = this.game.getWidth() / 5;
+                this.width = this.game.getWidth() * 3;
+                this.height = this.game.getWidth() * 1.5;
+                this.IM = answerG;
                 break;
         }
     }

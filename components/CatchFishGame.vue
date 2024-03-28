@@ -36,7 +36,7 @@ export default {
     return {
       questionCurrent: {},
       keyQuestion: [
-        'A', 'B', 'C', 'D'
+        'A', 'B', 'C', 'D','E','F','G'
       ]
     }
   },
