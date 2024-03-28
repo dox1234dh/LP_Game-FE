@@ -331,6 +331,191 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Xin chào, tôi là Hướng dẫn viên trên chuyến tàu mang số hiệu BÀ CHÚA THƠ NÔM, xuất phát từ thế kỉ XXI đến điểm cuối là ga TK XVIII. Bạn đã sẵn sàng khám phá cuộc hành trình này?",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Cảm ơn bạn đã sẵn sàng đồng hành cùng tôi. Bây giờ hãy lựa chọn những điều mà bạn muốn tìm kiếm nhé!",
+                buttons: [
+                    {
+                        text: "Tiểu sử cơ bản, ngắn gọn về Hồ Xuân Hương.",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Vai trò Hồ Xuân Hương trong chiều dài phát triển văn học Việt Nam",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Phong cách sáng tác Hồ Xuân Hương ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Nghệ thuật thơ Hồ Xuân Hương",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Các tác phẩm để đời của Hồ Xuân Hương",
+                        action: ButtonAction.RouterConversation,
+                        pos: 10
+                    },
+                    {
+                        text: "Video về Hồ Xuân Hương",
+                        action: ButtonAction.RouterConversation,
+                        pos: 12
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Nguồn gốc, xuất thân\n" +
+                    "Đa phần đều cho rằng:\n" +
+                    "-\tHồ Xuân Hương sống trong gian đoạn cuối thế kỉ XVII-đầu TK XIX\n" +
+                    "-\tLà người ở xã Quỳnh Đôi, huyện Quỳnh Lưu, tỉnh Nghệ An\n" +
+                    "-\tTuổi thơ êm đềm ở trong dinh thự lớn tên “Cổ Nguyệt đường”, ít bị ràng buộc trong gia giáo nghiêm khắc và được hưởng nền văn học từ sớm nên bộc lộ được rõ tư chất thông minh và hiếu học…\n" +
+                    "Cuộc đời\n" +
+                    "-\tBà được cưới gả từ rất sớm, những cả hai lần đò đèu không viên mãn, lận đận, éo le, ngang trái, xảy ra nhiều biến cố, khó khăn dù tài sắc vẹn toàn.\n" +
+                    "-\tBà thường rong ruổi nhiều nơi và giao lưu với nhiều danh sĩ nổi tiếng cùng thời, để lại không ít dấu ấn – có thể nói đây là một hiện tượng hiến thấy trong xã hội phong kiến…\n",
+                image: '/conversation-images/28.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Hồ Xuân Hương xuất hiện trong văn học trung đại Việt Nam đã tạo nên sự giao thoa giữa văn học viết với văn học dân gian. Bởi lẽ bà được xếp vào văn học viết nhưng có những biểu hiện của hiện tượng văn học dân gian như truyền miệng nhưng lại được sáng tác dưới hình thức chữ viết;  dẫn đến có cách gọi thơ của bà là “thơ Nôm truyền tụng” hay “thơ Nôm truyền bản”…\n" +
+                    "\n" +
+                    "Bà ảnh hưởng không nhỏ đến nền nghệ thuật nước nhà ở những giai đoạn sau đó như trong văn học, âm nhạc, nghệ thuật sân khấu,… đều lấy Hồ Xuân Hương làm nguồn cảm hứng. \n" +
+                    "Những tác phẩm của bà cũng được đưa vào trong chương trình giáo dục môn Ngữ văn…\n",
+                image: '/conversation-images/29.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Bởi lẽ Hồ Xuân Hương đã từng phải trải qua rất nhiều những thăng trầm trong cuộc sống nhưng đều không khiến bà chịu khuất phục và ngược lại càng mạnh mẽ, kiên cường hơn nên chủ đề trong thơ bà cũng phản ánh rất chân thực cuộc sống con người thời bấy giờ, đặc biệt là người phụ nữ:\n" +
+                    "-\t Là nhà thơ phụ nữ viết về phụ nữ - những người phụ nữ không hạnh phúc trong tình cảm và hôn nhân.  “Là tiếng nói cảm thương, tiếng nói khẳng định, tiếng nói tự ý thức đầy bản lĩnh.”\n" +
+                    "-\tNhà thơ trữ tình, trào phúng: bà châm biếm, chế giếu, phê phán những thói hư tật xấu trong xã hội phong kiến. Hy vọng, khát khao tự do trong cuộc sống khỏi sự khắc nghiệt của chế độ phong kiến.\n" +
+                    "-\tTình yêu quê hương, đất nước, thiên nhiên cũng không thể thiếu trong thơ bà.\n",
+                image: '/conversation-images/30.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "-\tGiọng điệu: Sắc sảo, độc đáo và đôi khi nghịch ngợm\n" +
+                    "-\tNgôn ngữ: Sử dụng sáng tạo ngôn ngữ văn học dân gian (như: thành ngữ, tục ngữ, ca dao, Đường luật Nôm,…) bằng cách “tâm trạng hóa” chúng hay sử dụng khẩu ngữ,..\n" +
+                    "-\tHình tượng nghệ thuật trong thơ Hồ Xuân Hương đều được xây dựng trên một quan niệm thẩm mỹ: “Cái đẹp là cuộc sống tự nhiên, bản năng lành mạnh của con người.”  hay hướng tới “vẻ đẹp trần thế của thân thể người phụ nữ”\n" +
+                    "-\tCác tác phẩm thơ của bà thường được trình bày theo phong cách thất ngôn bát cú hoặc thất ngôn tứ tuyệt; chữ Nôm điêu luyện và đặc sắc hơn chữ Hán.\n" +
+                    "-\tÝ tưởng thơ táo bạo, dù là điều cấm kị đối với lễ giáo phong kiến\n",
+                image: '/conversation-images/31.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "-\tThơ chữ Hán: “Độ Hoa phong”, “Hải ốc trù”, tập thơ “Lưu hương ký” (24 chữ Hán- 26 chữ Nôm).\n" +
+                    "-\tThơ chữ Nôm (đồ sộ mà tiêu biểu có): “Bánh trôi nước”, “Tự tình II”, “Cái nợ chồng con”, “Đánh đu”, “Đánh cờ”, “Mời trầu”, “Thiếu nữ ngủ ngày”, “Vinh cái quạt”,… hay những chùm thơ Nôm xướng họa cùng Chiêu Hổ…\n",
+                image: '/conversation-images/32.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                key: "audio",
+                text: "Video Hồ Xuân Hương: ",
+                image: 'https://www.youtube.com/embed/FjcCYxX3L6o?si=jitpouwH7SSwswwL'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
@@ -1088,17 +1273,17 @@ export const conversation = [
                 ]
             },
             {
-              actionType: ActionType.ShowImage,
-              speaker: Character.System,
-              text: "Đây là tiểu sử về tác giả Quang Dũng:\n" +
-                  "- Nhà thơ Quang Dũng có tên khai sinh là Bùi Đình Diệm. Quê ở làng Phượng Trì, huyện Đan Phượng, Hà Tây (nay là huyện Đan Phượng, Hà Nội).\n" +
-                  "- Ông sinh năm 1921, mất năm 1988.\n" +
-                  "- Thời học sinh, nhà thơ Quang Dũng đi học tại ban Trung học ở trường Thăng Long. Sau khi tốt nghiệp, ông làm thầy giáo dạy ở Sơn Tây.\n" +
-                  "- Sau năm 1945, ông tham gia nhập ngũ, đồng thời trở thành phóng viên tiền phương của tờ báo Chiến đấu.\n" +
-                  "- Năm 1947, ông được cơ quan cử đi học bổ túc tại Trường trung cấp quân sự tại Sơn Tây. Sau khi hoàn thành khóa học, ông được bầu làm Đại đội trưởng tại tiểu đoàn 212, trung đoàn 52 Tây Tiến.\n" +
-                  "- Một thời gian sau, nhà thơ Quang Dũng tham gia chiến dịch Tây Tiến đợt hai và được cử làm Phó đoàn tuyên truyền Lào – Việt. Cuối năm 1948, ông giữ chức vụ Trưởng tiểu ban tuyên huấn của Trung đoàn 52 Tây Tiến, sau đó được bầu làm Trưởng đoàn Văn nghệ Liên khu III. \n" +
-                  "- Tháng 8 năm 1951, ông xuất ngũ và tiếp tục công tác trong ngành văn nghệ. \n" +
-                  "- Từ sau năm 1954 ông làm biên tập viên của báo Văn nghệ và sau đó chuyển công tác và trở thành biên tập viên của Nhà xuất bản Văn học.\n",
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Đây là tiểu sử về tác giả Quang Dũng:\n" +
+                    "- Nhà thơ Quang Dũng có tên khai sinh là Bùi Đình Diệm. Quê ở làng Phượng Trì, huyện Đan Phượng, Hà Tây (nay là huyện Đan Phượng, Hà Nội).\n" +
+                    "- Ông sinh năm 1921, mất năm 1988.\n" +
+                    "- Thời học sinh, nhà thơ Quang Dũng đi học tại ban Trung học ở trường Thăng Long. Sau khi tốt nghiệp, ông làm thầy giáo dạy ở Sơn Tây.\n" +
+                    "- Sau năm 1945, ông tham gia nhập ngũ, đồng thời trở thành phóng viên tiền phương của tờ báo Chiến đấu.\n" +
+                    "- Năm 1947, ông được cơ quan cử đi học bổ túc tại Trường trung cấp quân sự tại Sơn Tây. Sau khi hoàn thành khóa học, ông được bầu làm Đại đội trưởng tại tiểu đoàn 212, trung đoàn 52 Tây Tiến.\n" +
+                    "- Một thời gian sau, nhà thơ Quang Dũng tham gia chiến dịch Tây Tiến đợt hai và được cử làm Phó đoàn tuyên truyền Lào – Việt. Cuối năm 1948, ông giữ chức vụ Trưởng tiểu ban tuyên huấn của Trung đoàn 52 Tây Tiến, sau đó được bầu làm Trưởng đoàn Văn nghệ Liên khu III. \n" +
+                    "- Tháng 8 năm 1951, ông xuất ngũ và tiếp tục công tác trong ngành văn nghệ. \n" +
+                    "- Từ sau năm 1954 ông làm biên tập viên của báo Văn nghệ và sau đó chuyển công tác và trở thành biên tập viên của Nhà xuất bản Văn học.\n",
                 image: '/conversation-images/22.png'
             },
             {
