@@ -1098,6 +1098,121 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé! ",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một nhà văn tiêu biểu của nhóm Tự lực văn đoàn, phương thức sáng tác mang bản chất chính con người nghệ sỹ của ông: tài hoa, tinh tế và giàu chất thơ. Các bạn có đoán được đó là nhà văn nào không nhỉ?\n" +
+                    "………………………………………………………………………………………. \n" +
+                    "Vâng đó là nhà văn Thạch Lam. \n",
+                buttons: [
+                    {
+                        text: "Vài nét về tiểu sử, đặc điểm con người Thạch Lam ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Quan niệm văn chương ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Sự nghiệp văn chương",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "VÀI NÉT VỀ TIỂU SỬ, ĐẶC ĐIỂM CON NGƯỜI THẠCH LAM\n" +
+                    "Đặc điểm con người Thạch Lam \n" +
+                    "-\tCon người trầm tĩnh, kín đáo, thiên về đời sống nội tâm. \n" +
+                    "+ Thạch Lam không thích sự ồn ào, khoa trương, ít khi phản ứng một cách bồng bột, mạnh mẽ. \n" +
+                    "+ Trong từng cử chỉ, từng hành động nhỏ, ông đều cẩn trọng, chân thành, dường như đặt vào đấy rất nhiều suy nghĩ và cả thái độ nâng niu. \n" +
+                    "-\tLà một con người đa cảm, có tâm hồn tinh tế. Là con người nhìn đời, nhìn người thiên về phía cái đẹp, cái thiện; ông cẩn trọng nâng niu mọi cái đẹp, điều thiện nhiều khi kín khuất, có cảm thương thì cũng nhẹ nhàng, man mác. \n",
+                image: '/conversation-images/43.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "*Là người hay suy nghĩ, cẩn trọng với nghề, Thạch Lam có những ý kiến sâu sắc, cụ thể về văn chương. ",
+                image: '/conversation-images/44.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "*Với đời văn chưa đầy mười năm, Thạch Lam để lại một khối lượng tác phẩm khá khiêm tốn: \n" +
+                    "- Ba tập truyện ngắn: \n" +
+                    "-\tTiểu thuyết Ngày mới (1939) \n" +
+                    "-\tTập kí Hà Nội băm sáu phố phường (1943)\n" +
+                    "-\tTập tiểu luận Theo dòng (1941) \n" +
+                    "-\tHai truyện viết cho thiếu nhi: Quyển sách (1940), Hạt ngọc (1940)\n",
+                image: "/conversation-images/45.png"
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Một vài đặc sắc nghệ thuật truyện ngắn của Thạch Lam",
+                image: "/conversation-images/46.png"
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
