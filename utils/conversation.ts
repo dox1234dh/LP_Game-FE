@@ -1246,6 +1246,142 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một tác giả thuộc thời kì kháng chiến chống Pháp. Đó là tác giả Nguyễn Đình Thi. Bây giờ, bạn hãy lựa chọn những điều mà bạn muốn tìm hiểu nhé!",
+                buttons: [
+                    {
+                        text: "Tiểu sử",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Sự nghiệp văn học",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Phong cách sáng tác",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Các tác phẩm tiêu biểu",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Nguyễn Đình Thi (1924-2003), là một nhà văn, nhà thơ, nhà phê bình văn học và nhạc sĩ Việt Nam thời hiện đại.\n" +
+                    "Ông sinh ngày 20/12/1924 ở Luông Pra Băng (Lào). Tuy nhiên, nguyên quán của ông là ở làng Vũ Thạch (nay là phố Bà Triệu, Tràng Tiền, Hoàn Kiếm, Hà Nội). Cha ông là một viên chức Sở bưu điện Đông Dương, từng sang làm việc ở Lào. Sau đó, ông theo cha mẹ về nước và đi học ở Hà Nội, Hải Phòng.\n" +
+                    "Từ nhỏ, Nguyễn Đình Thi đã nổi tiếng thông minh, học rất giỏi tất cả các môn, đặc biệt là môn Triết.\n" +
+                    "Sau khi tốt nghiệp Tú tài, ông học Luật ở Đại học Đông Dương và trở thành một trong những cán bộ chủ chốt của Hội Văn hóa Cứu quốc. Là một trí thức yêu nước, Nguyễn Đình Thi đã sớm trở thành người chiến sĩ cách mạng trung kiên.\n" +
+                    "Tháng 7/1945, Nguyễn Đình Thi được đi dự Quốc dân Đại hội tại Tân Trào và được cử vào Uỷ ban Dân tộc giải phóng Việt Nam. Từ đó cho đến cuối đời, Nguyễn Đình Thi liên tục đảm nhận những cương vị quan trọng trong lĩnh vực văn học, nghệ thuật.\n" +
+                    "Đọc thêm tại: http://100years.vnu.edu.vn/BTDHQGHN/Vietnamese/C1778/C1779/2006/05/N7907/\n",
+                image: '/conversation-images/24.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Nguyễn Đình Thi là người hoạt động chính trị, nhưng nhắc đến ông, mọi người thường nghĩ đến một nghệ sĩ đa tài. Ông sáng tác được nhạc, làm thơ, viết tiểu thuyết, kịch, tiểu luận phê bình.\n" +
+                    "Ông dành nhiệt tâm huyết nhất cho việc làm thơ. Nguyễn Đình Thi luôn trăn trở tìm tòi hướng sáng tạo nhằm đổi mới diện mạo thơ ca. Thơ ông dạt dào cảm hứng yêu nước với những bài thơ tiêu biểu như “Đất nước”, “Nhớ”, “Lá đỏ”,...\n" +
+                    "Trong lĩnh vực văn xuôi, Nguyễn Đình Thi cũng có những đóng góp rất đáng trân trọng. Ông là một nhà văn nhạt cảm và luôn có mặt trên dòng thời cuộc của dân tộc. Thành công lớn nhất ở thể loại văn xuôi phải kể đến hai tập tiểu thuyết “Vỡ bờ”.\n" +
+                    "Bạn đồng hành xem thêm tại: http://100years.vnu.edu.vn/BTDHQGHN/Vietnamese/\n" +
+                    "C1778/C1779/2006/05/N7907/\n" +
+                    "\n" +
+                    "Nguyễn Đình Thi thuộc thế hệ các nhà thơ trưởng thành trong kháng chiến chống Pháp. Sau năm 1954, ông tham gia công tác quản lý văn học nghệ thuật. Từ năm 1958 đến năm 1989, ông làm Tổng Thư ký Hội nhà văn Việt Nam. Từ năm 1995, ông là Chủ tịch Uỷ ban toàn quốc Liên hiệp các Hội Văn học nghệ thuật. Ông được nhà nước phong tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật đợt I năm 1996.\n",
+                image: '/conversation-images/25.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Thơ của Nguyễn Đình Thi giản dị, giàu tính triết lý nhưng cũng không kém phần lắng đọng: đó là tình yêu quê hương, đất nước, là sự tự hào về dân tộc.\n" +
+                    "Nguyễn Đình Thi đã dành cả đời để đi tìm tòi, khám phá, đổi mới hướng đi và sáng tạo thơ ca. Chính vì vậy mà những vần thơ của ông mang đậm phong cách cá nhân, đặc biệt, và hiện đại.\n",
+                image: '/conversation-images/26.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Tác phẩm chính: \n" +
+                    "- Triết luận: Triết học nhập môn, Siêu hình học, Triết học Kant,...\n" +
+                    "- Truyện, văn xuôi: Vào lửa, Mặt trận trên cao, Trên sóng thời gian, Xung kích,...\n" +
+                    "- Thơ: Việt Nam quê hương ta, Sóng reo, Người chiến sĩ, Đất nước, Trong bụi cát,...\n" +
+                    "- Kịch: Con nai đen, Tiếng đàn bà hóa đá, Hòn cuội,...\n",
+                image: '/conversation-images/27.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
