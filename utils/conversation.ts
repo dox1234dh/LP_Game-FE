@@ -1235,6 +1235,116 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một tác giả từng được ví như một vì sao chổi lạ xoẹt ngang bầu trời của nền thi ca Việt Nam, từng được mệnh danh là người “cai trị trường thơ Loạn” của các nhà thơ Bình Định, một thi phát lẫy lừng của phong trào Thơ Mới. Các bạn có đoán được đó là tác giả nào không nhỉ? \n" +
+                    "……………………………………………………………………………………..\n" +
+                    "Vâng đó là nhà thơ Hàn Mặc Tử\n",
+                buttons: [
+                    {
+                        text: "Vài nét về tiểu sử, đặc điểm con người Hàn Mặc Tử ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Quan niệm thơ của Hàn Mặc Tử",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Sự nghiệp sáng tác ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "*Để hiểu thơ Hàn Mặc Tử, ta nên hiểu về con người ấy qua hồi ức của những người thân trong gia đình, của bạn bè, của đồng nghiệp\n" +
+                    "*Đặc điểm con người Hàn Mặc Tử\n" +
+                    "- Người luôn nhạy cảm với những mất mát, hụt hẫng đồng thời do sinh ra trong một gia đình Thiên Chúa giáo nên ông cũng là người luôn mộ đạo, khao khát sống hướng đến đức tin và những giá trị tuyệt đối. \n" +
+                    "- Cuộc đời là điển hình cho kiếp tài hoa bạc mệnh: \n" +
+                    "+ Nhiều cuộc tình nhưng thường kết thúc vội vã và chia tay trong bi kịch. Không ít bóng hồng đi qua cuộc đời Hàn Mặc Tử đã trở thành nguồn cảm hứng và hình tượng nghệ thuật trong thơ ông. \n" +
+                    "+ Căn bệnh phong tạo nên bi kịch lớn trong cuộc đời thi sĩ, nhưng sự đau đớn tột cùng về thể xác lẫn sự tuyệt vọng về tinh thần lại khiến cảm hứng nghệ thuật của Hàn Mặc Tử thăng hoa. \n",
+                image: '/conversation-images/47.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "*Không chỉ để lại một di sản thơ phong phú, Hàn Mặc Tử còn để lại một hệ thống quan niệm của mình về thơ, về nghề thơ, về công việc làm thơ. ",
+                image: '/conversation-images/48.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "*Chỉ sáng tác trong 10 năm ngắn ngủi, nhưng với 6 tập thơ và 2 vở kịch đã giúp thi sĩ giữ một vị trí không thể thay thế trên thi đàn Việt Nam hiện đại. ",
+                image: '/conversation-images/49.png'
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "*Một vài đặc sắc nghệ thuật thơ Hàn Mặc Tử: ",
+                image: '/conversation-images/50.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
