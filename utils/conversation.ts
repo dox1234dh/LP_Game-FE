@@ -687,6 +687,128 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một nhà thơ được Xuân Diệu nhận xét là “nhà thơ của quê hương làng cảnh”, là nhà thơ số một viết về nông thôn Việt Nam. Và là nhà thơ cổ điển lớn cuối cùng của văn học trung đại Việt Nam. Vậy bạn có đoán được đó là nhà thơ nào không nhỉ? \n" +
+                    "---------------------------------------------------------------------------------\n" +
+                    "Vâng, đó là nhà thơ Nguyễn Khuyến. \n",
+                buttons: [
+                    {
+                        text: "Vài nét về tiểu sử Nguyễn Khuyến ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Quan niệm nghệ thuật về con người và thế giới của Nguyễn Khuyến ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Sự nghiệp sáng tác ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Khái quát nội dung và nghệ thuật trong thơ Nguyễn Khuyến",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "VÀI NÉT VỀ TIỂU SỬ NGUYỄN KHUYẾN",
+                image: '/conversation-images/40.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "*Một nhà thơ lớn bao giờ cũng có tư tưởng thẩm mỹ riêng, có quan niệm nghệ thuật riêng độc đáo về con người và thế giới. Và Nguyễn Khuyến cũng vậy!",
+                image: '/conversation-images/41.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "*Sáng tác của Nguyễn Khuyến khá phong phú, ông để lại hơn 800 tác phẩm gồm thơ, câu đối, văn viết bằng chữ Hán và chữ Nôm. Phần lớn đều làm sau khi từ quan về ở ẩn, đến nay mới giới thiệu được khoảng 400 tác phẩm.\n" +
+                    "*Các tác phẩm gồm có: Quế Sơn thi tập, Yên Đổ thi tập, Bách Liêu thi văn tập, Cẩm Ngữ, “Bạn đến chơi nhà” và 3 bài thơ hay về thu: Thu điếu, Thu ẩm, Thu Vịnh cùng nhiều bài ca, hát ả đào, văn tế, câu đối truyền miệng. \n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "KHÁI QUÁT VỀ NỘI DUNG VÀ NGHỆ THUẬT TRONG THƠ NGUYỄN KHUYẾN",
+                image: '/conversation-images/42.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
