@@ -2658,6 +2658,134 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!  ",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một tác phẩm tiêu biểu của nhà thơ Hàn Mặc Tử, đó là bài thơ “Mùa xuân chính”. Bây giờ bạn hãy lựa chọn những điều mà bạn muốn khám phá về bài thơ “Mùa xuân chín” của Hàn Mặc Tử nhé! ",
+                buttons: [
+                    {
+                        text: "Đọc tác phẩm ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Tìm hiểu chung về tác phẩm ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Phong cách sáng tác",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Khám phá tác phẩm",
+                        action: ButtonAction.RouterConversation,
+                        pos: 13
+                    },
+                    {
+                        text: "Khái quát nội dung và nghệ thuật. ",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Đọc tác phẩm",
+                image: '/conversation-images/70.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "-\tTác phẩm được xếp ở phần “Hương thơm” trong tập thơ “Đau thương” (1938) \n" +
+                    "-\tThể thơ: bảy chữ \n" +
+                    "-\tBố cục: \n" +
+                    "+ Hai khổ đầu: khung cảnh tươi mới, đầy sức sống của mùa xuân \n" +
+                    "+ Hai khổ cuối: Tâm trạng của người con gái sắp lấy chồng và nhân vật trữ tình \n" +
+                    "-\tNhan đề bài thơ: \n" +
+                    "+ Được cấu tạo bởi những từ thuộc từ loại: Danh từ +Tính từ \n" +
+                    "+ “Mùa xuân”: sinh sôi, nảy nở \n" +
+                    "+ “Chín”: trạng thái lí tưởng của sự vật, hiện tượng \n" +
+                    "Gợi cảm giác mùa xuân đang đi vào độ căng mọng và tươi đẹp nhất. \n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Khám phá tác phẩm",
+                image: '/conversation-images/71.jpg'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Khái quát về nội dung, nghệ thuật",
+                image: '/conversation-images/72.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
