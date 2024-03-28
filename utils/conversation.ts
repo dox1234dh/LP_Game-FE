@@ -1042,6 +1042,188 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một tác giả thuộc thời kì kháng chiến chống Pháp. Đó là tác giả Quang Dũng. Bây giờ, bạn hãy lựa chọn những điều mà bạn muốn tìm hiểu nhé!",
+                buttons: [
+                    {
+                        text: "Tiểu sử",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Sự nghiệp văn học",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Phong cách sáng tác",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Các tác phẩm tiêu biểu",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+              actionType: ActionType.ShowImage,
+              speaker: Character.System,
+              text: "Đây là tiểu sử về tác giả Quang Dũng:\n" +
+                  "- Nhà thơ Quang Dũng có tên khai sinh là Bùi Đình Diệm. Quê ở làng Phượng Trì, huyện Đan Phượng, Hà Tây (nay là huyện Đan Phượng, Hà Nội).\n" +
+                  "- Ông sinh năm 1921, mất năm 1988.\n" +
+                  "- Thời học sinh, nhà thơ Quang Dũng đi học tại ban Trung học ở trường Thăng Long. Sau khi tốt nghiệp, ông làm thầy giáo dạy ở Sơn Tây.\n" +
+                  "- Sau năm 1945, ông tham gia nhập ngũ, đồng thời trở thành phóng viên tiền phương của tờ báo Chiến đấu.\n" +
+                  "- Năm 1947, ông được cơ quan cử đi học bổ túc tại Trường trung cấp quân sự tại Sơn Tây. Sau khi hoàn thành khóa học, ông được bầu làm Đại đội trưởng tại tiểu đoàn 212, trung đoàn 52 Tây Tiến.\n" +
+                  "- Một thời gian sau, nhà thơ Quang Dũng tham gia chiến dịch Tây Tiến đợt hai và được cử làm Phó đoàn tuyên truyền Lào – Việt. Cuối năm 1948, ông giữ chức vụ Trưởng tiểu ban tuyên huấn của Trung đoàn 52 Tây Tiến, sau đó được bầu làm Trưởng đoàn Văn nghệ Liên khu III. \n" +
+                  "- Tháng 8 năm 1951, ông xuất ngũ và tiếp tục công tác trong ngành văn nghệ. \n" +
+                  "- Từ sau năm 1954 ông làm biên tập viên của báo Văn nghệ và sau đó chuyển công tác và trở thành biên tập viên của Nhà xuất bản Văn học.\n",
+                image: '/conversation-images/22.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Đây là tiểu sử về tác giả Quang Dũng:\n" +
+                    "- Nhà thơ Quang Dũng có tên khai sinh là Bùi Đình Diệm. Quê ở làng Phượng Trì, huyện Đan Phượng, Hà Tây (nay là huyện Đan Phượng, Hà Nội).\n" +
+                    "- Ông sinh năm 1921, mất năm 1988.\n" +
+                    "- Thời học sinh, nhà thơ Quang Dũng đi học tại ban Trung học ở trường Thăng Long. Sau khi tốt nghiệp, ông làm thầy giáo dạy ở Sơn Tây.\n" +
+                    "- Sau năm 1945, ông tham gia nhập ngũ, đồng thời trở thành phóng viên tiền phương của tờ báo Chiến đấu.\n" +
+                    "- Năm 1947, ông được cơ quan cử đi học bổ túc tại Trường trung cấp quân sự tại Sơn Tây. Sau khi hoàn thành khóa học, ông được bầu làm Đại đội trưởng tại tiểu đoàn 212, trung đoàn 52 Tây Tiến.\n" +
+                    "- Một thời gian sau, nhà thơ Quang Dũng tham gia chiến dịch Tây Tiến đợt hai và được cử làm Phó đoàn tuyên truyền Lào – Việt. Cuối năm 1948, ông giữ chức vụ Trưởng tiểu ban tuyên huấn của Trung đoàn 52 Tây Tiến, sau đó được bầu làm Trưởng đoàn Văn nghệ Liên khu III. \n" +
+                    "- Tháng 8 năm 1951, ông xuất ngũ và tiếp tục công tác trong ngành văn nghệ. \n" +
+                    "- Từ sau năm 1954 ông làm biên tập viên của báo Văn nghệ và sau đó chuyển công tác và trở thành biên tập viên của Nhà xuất bản Văn học.\n",
+                image: '/conversation-images/22.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Đây là tiểu sử về tác giả Quang Dũng:\n" +
+                    "- Nhà thơ Quang Dũng có tên khai sinh là Bùi Đình Diệm. Quê ở làng Phượng Trì, huyện Đan Phượng, Hà Tây (nay là huyện Đan Phượng, Hà Nội).\n" +
+                    "- Ông sinh năm 1921, mất năm 1988.\n" +
+                    "- Thời học sinh, nhà thơ Quang Dũng đi học tại ban Trung học ở trường Thăng Long. Sau khi tốt nghiệp, ông làm thầy giáo dạy ở Sơn Tây.\n" +
+                    "- Sau năm 1945, ông tham gia nhập ngũ, đồng thời trở thành phóng viên tiền phương của tờ báo Chiến đấu.\n" +
+                    "- Năm 1947, ông được cơ quan cử đi học bổ túc tại Trường trung cấp quân sự tại Sơn Tây. Sau khi hoàn thành khóa học, ông được bầu làm Đại đội trưởng tại tiểu đoàn 212, trung đoàn 52 Tây Tiến.\n" +
+                    "- Một thời gian sau, nhà thơ Quang Dũng tham gia chiến dịch Tây Tiến đợt hai và được cử làm Phó đoàn tuyên truyền Lào – Việt. Cuối năm 1948, ông giữ chức vụ Trưởng tiểu ban tuyên huấn của Trung đoàn 52 Tây Tiến, sau đó được bầu làm Trưởng đoàn Văn nghệ Liên khu III. \n" +
+                    "- Tháng 8 năm 1951, ông xuất ngũ và tiếp tục công tác trong ngành văn nghệ. \n" +
+                    "- Từ sau năm 1954 ông làm biên tập viên của báo Văn nghệ và sau đó chuyển công tác và trở thành biên tập viên của Nhà xuất bản Văn học.\n",
+                image: '/conversation-images/22.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Sự nghiệp văn học của tác giả Quang Dũng:\n" +
+                    "Nhà thơ Quang Dũng là thế hệ thơ tài năng, trưởng thành trong kháng chiến chống Pháp. Ông đa tài, biết vẽ tranh, sáng tác nhạc, viết văn xuôi và làm thơ.\n" +
+                    "Trước năm 1945, nhà thơ Quang Dũng đã làm thơ, nhưng thơ ông thực sự được biết đến rộng rãi là từ bài thơ “Tây Tiến” (1948) cùng một số tác phẩm khác trong thời kì kháng chiến chống Pháp.\n" +
+                    "Năm 2001, ông được truy tặng Giải thưởng Nhà nước về Văn học nghệ thuật.\n",
+                image: '/conversation-images/23.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Phong cách sáng tác: Quang Dũng là một nhà thơ mang hồn thơ phóng khoáng, hồn hậu, lãng mạn và tài hoa.",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Tác phẩm chính: Mây đầu ô (thơ, 1986), Thơ văn Quang Dũng (tuyển thơ văn, 1988), Rừng biển quê hương (tập thơ, văn, in chung với Trần Lê Văn, 1957),…\n" +
+                    "(Đọc thêm tại: https://vndoc.com/tieu-su-cuoc-doi-va-su-nghiep-sang-tac-cua-nha-tho-quang-dung-135422#mcetoc_1fdc5t1m6d)\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
