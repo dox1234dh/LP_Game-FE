@@ -33,7 +33,7 @@
     <div
         class="absolute text-black left-0 right-0 bottom-0 w-2/5 h-1/3 mx-auto"
     >
-      <div v-if="isShowButtonGroup" class="flex flex-col space-y-4">
+      <div v-if="isShowButtonGroup" class="flex flex-col space-y-4 max-h-[250px] overflow-y-auto">
         <!--        List Button  -->
         <a-button v-for="(item, idx) in listBtn"
                   :key="idx"

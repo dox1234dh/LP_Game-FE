@@ -18,20 +18,25 @@ import {ExceptionMap} from "ant-design-vue/es/result";
 import ConversationScreen from "../components/ConversationScreen.vue"
 import CatchFishGame from "../components/CatchFishGame.vue"
 import FruitNinjaGame from "../components/FruitNinjaGame.vue";
+import {useAuthStore} from "~/store/auth";
 
 const route = useRoute();
 const router = useRouter();
 let id = ref(0);
 let data = reactive({});
 let typeShow = ref(-1)
-
+const { logUserOut } = useAuthStore(); // use authenticateUser action from  auth store
 interface listQuestion {
   id: Number;
 }
 
 async function getQuestion(id: listQuestion) {
   const res = await apiListQuestion(id);
-  if (res === null) {
+  if (res == 401) {
+    logUserOut()
+    await router.replace("/login")
+  }
+  else if (res === null) {
     throw ExceptionMap[500];
   } else {
     return res;
@@ -79,6 +84,10 @@ async function savePlayLog({score, status} : any) {
   } catch (error) {
     message.error("Có lỗi xảy ra");
   }
-  await router.replace('/');
+  if (data == 401) {
+    logUserOut()
+    await router.replace("/login")
+  }
+  else await router.replace('/');
 }
 </script>

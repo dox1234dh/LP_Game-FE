@@ -1,3 +1,5 @@
+import {urlApi} from "~/composables/utils";
+
 interface savePlayLog {
     score: Number,
     stage: Number,
@@ -8,32 +10,39 @@ interface listQuestion {
     id: Number
 }
 
-export async function apiSavePlayLog({ score, stage, status }: savePlayLog) {
+export async function apiSavePlayLog({score, stage, status}: savePlayLog) {
     const token = useCookie('token');
-    const { data, pending }: any = await $fetch(urlApi().urlSavePlayLog, {
+    const {data, pending}: any = await $fetch(urlApi().urlSavePlayLog, {
         method: 'post',
-        headers: <any>{ 'Content-Type': 'application/json', 'x-access-token': token.value, },
+        headers: <any>{'Content-Type': 'application/json', 'x-access-token': token.value,},
         body: {
             "score": score,
             "stage": stage,
             "status": status
         },
     });
-
+    if (data.status == 401) {
+        return 401;
+    }
     if (data) {
         return true;
     }
     return false;
 }
 
-export async function apiListQuestion({ id }: listQuestion) {
+export async function apiListQuestion({id}: listQuestion) {
     const token = useCookie('token');
-    const data: any = await $fetch(urlApi().urlListQuestion + `/${id}`, {
-        method: 'get',
-        headers: <any>{ 'x-access-token': token.value, },
-    });
-    if (data) {
-        return data;
+    try {
+        const data: any = await $fetch(urlApi().urlListQuestion + `/${id}`, {
+            method: 'get',
+            headers: <any>{'x-access-token': token.value,},
+        });
+        if (data) {
+            return data;
+        }
+    } catch (error : any) {
+        return error.status;
     }
     return null;
+
 }
