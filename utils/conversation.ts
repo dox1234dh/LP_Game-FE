@@ -3691,6 +3691,216 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một tác phẩm của nhà thơ Quang Dũng, được sáng tác trong thời kì kháng chiến chống Pháp. Bài thơ mang tên “Tây Tiến”. Bây giờ, bạn hãy lựa chọn kiến thức mà bạn muốn tìm hiểu nhé!",
+                buttons: [
+                    {
+                        text: "Đọc bài thơ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Hoàn cảnh sáng tác",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Nội dung",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Nghệ thuật",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Sông Mã xa rồi Tây Tiến ơi!\n" +
+                    "Nhớ về rừng núi, nhớ chơi vơi.\n" +
+                    "Sài Khao sương lấp đoàn quân mỏi,\n" +
+                    "Mường Lát hoa về trong đêm hơi.\n" +
+                    "\n" +
+                    "Dốc lên khúc khuỷu dốc thăm thẳm,\n" +
+                    "Heo hút cồn mây, súng ngửi trời.\n" +
+                    "Ngàn thước lên cao, ngàn thước xuống,\n" +
+                    "Nhà ai Pha Luông mưa xa khơi.\n" +
+                    "\n" +
+                    "Anh bạn dãi dầu không bước nữa,\n" +
+                    "Gục lên súng mũ bỏ quên đời!\n" +
+                    "Chiều chiều oai linh thác gầm thét,\n" +
+                    "Đêm đêm Mường Hịch cọp trêu người.\n" +
+                    "\n" +
+                    "Nhớ ôi Tây Tiến cơm lên khói,\n" +
+                    "Mai Châu mùa em thơm nếp xôi.\n" +
+                    "\n" +
+                    "Doanh trại bừng lên hội đuốc hoa,\n" +
+                    "Kìa em xiêm áo tự bao giờ.\n" +
+                    "Khèn lên man điệu nàng e ấp,\n" +
+                    "Nhạc về Viên Chăn xây hồn thơ.\n" +
+                    "\n" +
+                    "Người đi Châu Mộc chiều sương ấy,\n" +
+                    "Có thấy hồn lau nẻo bến bờ?\n" +
+                    "Có nhớ dáng người trên độc mộc,\n" +
+                    "Trôi dòng nước lũ hoa đong đưa?\n" +
+                    "\n" +
+                    "Tây Tiến đoàn binh không mọc tóc,\n" +
+                    "Quân xanh màu lá dữ oai hùm.\n" +
+                    "Mắt trừng gửi mộng qua biên giới,\n" +
+                    "Đêm mơ Hà Nội dáng kiều thơm.\n" +
+                    "\n" +
+                    "Rải rác biên cương mồ viễn xứ,\n" +
+                    "Chiến trường đi chẳng tiếc đời xanh.\n" +
+                    "Áo bào thay chiếu, anh về đất,\n" +
+                    "Sông Mã gầm lên khúc độc hành.\n" +
+                    "\n" +
+                    "Tây Tiến người đi không hẹn ước,\n" +
+                    "Đường lên thăm thẳm một chia phôi.\n" +
+                    "Ai lên Tây Tiến mùa xuân ấy,\n" +
+                    "Hồn về Sầm Nứa chẳng về xuôi.\n" +
+                    "\n" +
+                    "Phù Lưu Chanh, 1948\n",
+                image: '/conversation-images/79.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Binh đoàn Tây Tiến được thành lập vào năm 1947 – trong thời kì kháng chiến chống Pháp. Nhiệm vụ chính của binh đoàn là phối hợp với bộ đội Lào nhằm đánh tiêu hao sinh lực địch. Nhà thơ Quang Dũng đã từng giữ chức Đại đội trưởng.\n" +
+                    "Cuối năm 1948, nhà thơ Quang Dũng nhận được lệnh chuyển sang đơn vị khác tại Phù Lưu Chanh. Trong cảm xúc nghẹn ngào, lưu luyến của giây phút chia li, ông đã sáng tác bài thơ “Tây Tiến”.\n" +
+                    "Chính vì tác giả đã từng là một người lính trong đoàn binh Tây Tiến nên khi sáng tác bài thơ này, ông đã lấy từ chính trải nghiệm thực của một người lính từng cầm súng chiến đấu.\n" +
+                    "Bài thơ ban đầu có tựa đề là “Nhớ Tây Tiến” in trong tập thơ “Mây đầu ô”.\n",
+                image: '/conversation-images/80.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Sau đây là những kiến thức về nội dung mà bạn cần lưu ý khi tìm hiểu bài thơ “Tây Tiến”:\n" +
+                    "a. Nhan đề “Tây Tiến”\n" +
+                    "- Tây Tiến là tên một đơn vị quân đội được thành lập đầu năm 1947 trong thời kì kháng chiến chống Pháp.\n" +
+                    "- Họ có nhiệm vụ phối hợp với bộ đội Lào để bảo vệ biên giới Việt – Lào và nhằm đánh tiêu hao sinh lực địch.\n" +
+                    "- Địa bàn hoạt động của Tây Tiến khá rộng, bao gồm các tỉnh: Lai Châu, Hòa Bình, Sơn La, miền Tây Thanh Hóa và Sầm Nưa (Lào).\n" +
+                    "- Các chiến sĩ thuộc binh đoàn Tây Tiến phần đông là thanh niên Hà Nội, trong đó có nhiều giới trí thức là học sinh, sinh viên như Quang Dũng. Họ phải chiến đấu trong hoàn cảnh rất khó khăn, thiếu thốn về vật chất, đặc biệt là căn bệnh sốt rét rừng. Thế nhưng, những người chiến sĩ vẫn giữ trong mình tinh thần lạc quan, yêu đời và chiến đấu dũng cảm.\n" +
+                    "- Tác giả Quang Dũng đã từng làm Đại đội trưởng của binh đoàn Tây Tiến. Sau đó một thời gian, ông chuyển công tác về đơn vị mới. Khi dự hội nghị toàn quân ở Phù Lưu Chanh, tác giả bồi hồi nhớ lại kỉ niệm kháng chiến cùng đồng đội ở miền biên cương Tây Bắc mà viết nên bài thơ “Tây Tiến”.\n" +
+                    "\n" +
+                    "b. Nội dung khái quát bài thơ\n" +
+                    "Bài thơ “Tây Tiến” của nhà thơ Quang Dũng đã thể hiện nỗi nhớ và niềm tự hào về những người đồng đội thân yêu trong đoàn binh Tây Tiến - những chiến sĩ hào hoa, dũng cảm, vượt mọi khó khăn, khắc nghiệt nơi núi rừng để chiến đấu vì hòa bình Tổ quốc.\n" +
+                    "\n" +
+                    "c. Hình tượng người lính Tây Tiến\n" +
+                    "5\tSau đây là những kiến thức về nội dung mà bạn cần lưu ý khi tìm hiểu bài thơ “Tây Tiến”:\n" +
+                    "a. Nhan đề “Tây Tiến”\n" +
+                    "- Tây Tiến là tên một đơn vị quân đội được thành lập đầu năm 1947 trong thời kì kháng chiến chống Pháp.\n" +
+                    "- Họ có nhiệm vụ phối hợp với bộ đội Lào để bảo vệ biên giới Việt – Lào và nhằm đánh tiêu hao sinh lực địch.\n" +
+                    "- Địa bàn hoạt động của Tây Tiến khá rộng, bao gồm các tỉnh: Lai Châu, Hòa Bình, Sơn La, miền Tây Thanh Hóa và Sầm Nưa (Lào).\n" +
+                    "- Các chiến sĩ thuộc binh đoàn Tây Tiến phần đông là thanh niên Hà Nội, trong đó có nhiều giới trí thức là học sinh, sinh viên như Quang Dũng. Họ phải chiến đấu trong hoàn cảnh rất khó khăn, thiếu thốn về vật chất, đặc biệt là căn bệnh sốt rét rừng. Thế nhưng, những người chiến sĩ vẫn giữ trong mình tinh thần lạc quan, yêu đời và chiến đấu dũng cảm.\n" +
+                    "- Tác giả Quang Dũng đã từng làm Đại đội trưởng của binh đoàn Tây Tiến. Sau đó một thời gian, ông chuyển công tác về đơn vị mới. Khi dự hội nghị toàn quân ở Phù Lưu Chanh, tác giả bồi hồi nhớ lại kỉ niệm kháng chiến cùng đồng đội ở miền biên cương Tây Bắc mà viết nên bài thơ “Tây Tiến”.\n" +
+                    "\n" +
+                    "b. Nội dung khái quát bài thơ\n" +
+                    "Bài thơ “Tây Tiến” của nhà thơ Quang Dũng đã thể hiện nỗi nhớ và niềm tự hào về những người đồng đội thân yêu trong đoàn binh Tây Tiến - những chiến sĩ hào hoa, dũng cảm, vượt mọi khó khăn, khắc nghiệt nơi núi rừng để chiến đấu vì hòa bình Tổ quốc.\n" +
+                    "\n" +
+                    "c. Hình tượng người lính Tây Tiến\n" +
+                    " \n" +
+                    "- Xuất thân: phần đông là thanh niên Hà Nội, trong đó có nhiều học sinh, sinh viên, trí thức trẻ. \n" +
+                    "- Binh đoàn Tây Tiến hoạt động chủ yếu trên địa bàn rừng núi miền Tây Bắc sang tới Thượng Lào.\n" +
+                    "- Nhiệm vụ: bảo vệ biên giới Việt – Lào và phối hợp với bộ đội Lào đánh tiêu hao sinh lực địch.\n" +
+                    "- Hoàn cảnh thực hiện nhiệm vụ:\n" +
+                    "+ Địa hình hiểm trở, quanh co, gập ghềnh: địa danh Sài Khao, Mường Lát gợi sự hẻo lánh, xa xôi; các từ láy giàu tính tạo hình “khúc khuỷu”, “thăm thẳm”, “heo hút”.\n" +
+                    "+ Nhịp thơ bẻ đôi: “Ngàn thước lên cao, ngàn thước xuống” đã gợi tả sự nguy hiểm, trắc trở của địa hình hành quân.\n" +
+                    "+ Hình ảnh “súng ngửi trời” thể hiện tầm cao của núi non mà người lính phải vượt qua.\n" +
+                    "- Là những người lính trẻ có tâm hồn lãng mạn, hào hoa:\n" +
+                    "+ Là những con người nặng tình.\n" +
+                    "+ Thể hiện qua đêm lửa trại liên hoan tưng bừng.\n" +
+                    "+ Tâm hồn người lính bay bổng, say mê trong không gian ấm áp tình quân dân.\n" +
+                    "- Mang vẻ đẹp bi tráng, hào hùng:\n" +
+                    "+ Họ luôn trong tâm thế sẵn sàng chiến đấu và quyết hi sinh “dãi dầu không bước nữa”, “gục lên súng mũ bỏ quên đời”.\n" +
+                    "+ Sẵn sàng hi sinh tuổi trẻ của mình cho đất nước “Rải rác biên cương mồ viễn xứ”, “chiến trường đi chẳng tiếc đời xanh”.\n" +
+                    "+ Cái chết được lí tưởng hóa như hình ảnh tráng sĩ xưa “áo bào”, “khúc độc hành”.\n" +
+                    "=> Chốt lại: lạc quan, kiên cường, tâm hồn lãng mạn, hào hoa, mang vẻ đẹp bi hùng, bi tráng.\n" +
+                    "\tKhi người chơi lựa chọn (3)\n" +
+                    "\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Khái quát về nghệ thuật:\n" +
+                    "- Cảm hứng và bút pháp lãng mạn mang đậm chất bi tráng.\n" +
+                    "- Cách sử dụng ngôn từ đặc sắc: chỉ địa danh, từ tượng hình, từ Hán Việt,...\n" +
+                    "- Kết hợp chất nhạc và chất họa.\n" +
+                    "- Nhịp thơ linh hoạt, khi thì ngắt nhịp nhanh, chắc khỏe, lúc thì nhẹ bẫng tạo sự cân đối trong toàn bài thơ.\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
