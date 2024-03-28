@@ -1832,6 +1832,166 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một tác giả thuộc văn học hiện đại sau 1975. Đó là tác giả Trần Đăng Khoa. Bây giờ, bạn hãy lựa chọn những điều mà bạn muốn tìm hiểu nhé!",
+                buttons: [
+                    {
+                        text: "Tiểu sử",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Sự nghiệp văn học",
+                        action: ButtonAction.RouterConversation,
+                        pos: 7
+                    },
+                    {
+                        text: "Phong cách sáng tác",
+                        action: ButtonAction.RouterConversation,
+                        pos: 10
+                    },
+                    {
+                        text: "Các tác phẩm tiêu biểu",
+                        action: ButtonAction.RouterConversation,
+                        pos: 12
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Trần Đăng Khoa sinh vào tháng 4/1958 tại huyện Nam Sách, Hải Dương. Ông là nhà thơ, nhà báo và biên tập viên của Tạp chí Văn nghệ Quân đội, cũng như hội viên của Hội nhà văn Việt Nam. Hiện tại, ông đang giữ chức vụ Phó Bí thư Đảng ủy Đài tiếng nói Việt Nam.",
+                image: '/conversation-images/33.png'
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                key: "audio",
+                text: "Từ thuở nhỏ, Trần Đăng Khoa đã nổi tiếng với khả năng sáng tác xuất sắc và được mệnh danh là Thần đồng của thi ca Việt Nam. Năm 8 tuổi, ông đã có một số sáng tác được in trên báo. Năm 10 tuổi, ông đã cho xuất bản tập thơ đầu tiên mang tên “Từ góc sân nhà em” (1968). Cũng trong năm 1968, ông đã cho ra mắt tập thơ thứ hai là “Góc sân và khoảng trời”. Trong đó, bài thơ “Hạt gạo làng ta” là bài thơ phổ biến nhất của nhà thơ Trần Đăng Khoa.\n" +
+                    "Người chơi có thể xem thêm video sau để hiểu thêm về khả năng sáng tác xuất sắc từ nhỏ của Trần Đăng Khoa ",
+                image: 'https://www.youtube.com/embed/jXeZvN0TCCI?si=2Z7mxdiDcz8qvHt2'
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.MainCharacter,
+                text: "Thời niên thiếu của Trần Đăng Khoa thì sao (mục nhỏ của 1)"
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Trần Đăng Khoa nhập ngũ vào ngày 26/2/1975 khi đang học lớp 10 tại trường PT cấp 3 Nam Sách. Ông tham gia chiến đấu ở Tiểu đoàn 691, Trung đoàn 2 Quân tăng cường Hải Hưng. Tuy việc tham gia chiến tranh đã ảnh hưởng đến sự nghiệp của ông nhưng đồng thời, đây cũng là nguồn cảm hứng để ông sáng tác nhiều tác phẩm về chủ đề chiến tranh. \n" +
+                    "Sau 1975, Trần Đăng Khoa đã được điều về quân chủng hải quân để tiếp tục sự nghiệp của mình. Sau đó, ông được cử đi du học tại Viện Văn học Thế giới M.Gorki thuộc Viện Hàn lâm Khoa học Xã hội Nga để nâng cao kiến thức và kĩ năng về văn chương. \n" +
+                    "Sau khi trở về nước, ông đã công tác tại một số đơn vị trong Quân đội rồi được điều đến làm việc tại Tạp chí Văn nghê Quân đội vào năm 1994. Từ năm 2004, ông đã chuyển về làm tại Đài Tiếng nói Việt Nam và giữ quân hàm Thượng tá.\n"
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Nhà thơ Trần Đăng Khoa không chỉ là một nhà thơ nổi bật của Việt Nam mà còn là một trong những tác giả tiêu biểu đương đại trước 1975. \n" +
+                    "Trong sự nghiệp văn học của mình, ông đã sáng tác hơn 20 tập thơ và bài trường ca như “Bên cửa sổ máy bay”, “Khúc hát người anh hùng”, “Chân dung và đối thoại”,...Ngoài ra còn có một số tập bút kí và tiểu luận phê bình. \n" +
+                    "Với ngòi bút mang tính cá nhân, ông đã ghi dấu ấn trong tâm trí độc giả bằng những kí ức về tuổi thơ hồn nhiên, chân thật, sâu sắc với nhiều tầng ý nghĩa khác nhau. \n",
+                image: '/conversation-images/34.png'
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Một số giải thưởng ông đạt được (mục nhỏ của 2)\n" +
+                    "- Ba lần đạt giải nhất thơ báo Thiếu niên Tiền phong (1968, 1969, 1971)\n" +
+                    "- Giải A cuộc thi thơ báo Văn nghệ (1981 – 1982) \n" +
+                    "- Giải thưởng Nhà nước về Văn học nghệ thuật, đợt I, năm 2001.\n"
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Thơ Trần Đăng Khoa không chỉ tươi trẻ, trong sáng mà còn sâu sắc, giống như những bài đồng dao với cách viết uyển chuyển và lôi cuốn.Trong những tác phẩm của ông, âm nhạc không chỉ là giai điệu của tâm hồn mà còn có khả năng gợi tả hình ảnh và tạo nét nghĩa cho câu thơ rất tinh tế. ",
+                image: '/conversation-images/35.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "- Từ góc sân nhà em (thơ, 1968)\n" +
+                    "- Góc sân và khoảng trời (thơ, 1973… tái bản lần thứ 99 năm 2009)\n" +
+                    "- Thơ Trần Đăng Khoa (tập 1, 1970)\n" +
+                    "- Khúc hát người anh hùng (trường ca, 1974)\n" +
+                    "- Trừng phạt (trường ca, 1973)\n" +
+                    "- Giông bão (trường ca, 1983)\n" +
+                    "- Bên cửa sổ máy bay (thơ, 1986; tái bản, bổ sung 2009)\n" +
+                    "- Thơ Trần Đăng Khoa (tập 2, 1983)\n" +
+                    "- Chân dung và đối thoại (1998)\n" +
+                    "- Người thường gặp (2000)\n" +
+                    "- Đảo chìm (in lần thứ 25, 2009)\n" +
+                    "và nhiều tập khác được dịch in ở nước ngoài.\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
