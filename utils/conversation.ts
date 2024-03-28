@@ -3923,6 +3923,220 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một tác phẩm của nhà thơ Nguyễn Đình Thi, được sáng tác trong thời kì kháng chiến chống Pháp. Bài thơ mang tên “Đất nước”. Bây giờ, bạn hãy lựa chọn kiến thức mà bạn muốn tìm hiểu nhé!",
+                buttons: [
+                    {
+                        text: "Đọc bài thơ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Hoàn cảnh sáng tác",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Nội dung",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Nghệ thuật",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Sáng mát trong như sáng năm xưa\n" +
+                    "Gió thổi mùa thu hương cốm mới\n" +
+                    "Tôi nhớ những ngày thu đã xa\n" +
+                    "Sáng chớm lạnh trong lòng Hà Nội\n" +
+                    "Những phố dài xao xác hơi may\n" +
+                    "Người ra đi đầu không ngoảnh lại\n" +
+                    "Sau lưng thềm nắng lá rơi đầy.\n" +
+                    "\n" +
+                    "Mùa thu nay khác rồi\n" +
+                    "Tôi đứng vui nghe giữa núi đồi\n" +
+                    "Gió thổi rừng tre phấp phới\n" +
+                    "Trời thu thay áo mới\n" +
+                    "Trong biếc nói cười thiết tha!\n" +
+                    "Trời xanh đây là của chúng ta\n" +
+                    "Núi rừng đây là của chúng ta\n" +
+                    "Những cánh đồng thơm mát\n" +
+                    "Những ngả đường bát ngát\n" +
+                    "Những dòng sông đỏ nặng phù sa\n" +
+                    "\n" +
+                    "Nước chúng ta\n" +
+                    "Nước những người chưa bao giờ khuất\n" +
+                    "Đêm đêm rì rầm trong tiếng đất\n" +
+                    "Những buổi ngày xưa vọng nói về!\n" +
+                    "Ôi những cánh đồng quê chảy máu\n" +
+                    "Dây thép gai đâm nát trời chiều\n" +
+                    "Những đêm dài hành quân nung nấu\n" +
+                    "Bỗng bồn chồn nhớ mắt người yêu.\n" +
+                    "Từ những năm đau thương chiến đấu\n" +
+                    "Đã ngời lên nét mặt quê hương\n" +
+                    "Từ gốc lúa bờ tre hồn hậu\n" +
+                    "Đã bật lên những tiếng căm hờn\n" +
+                    "\n" +
+                    "Bát cơm chan đầy nước mắt\n" +
+                    "Bay còn giằng khỏi miệng ta\n" +
+                    "Thằng giặc Tây, thằng chúa đất\n" +
+                    "Đứa đè cổ, đứa lột da...\n" +
+                    "\n" +
+                    "Xiềng xích chúng bay không khoá được\n" +
+                    "Trời đầy chim và đất đầy hoa\n" +
+                    "Súng đạn chúng bay không bắn được\n" +
+                    "Lòng dân ta yêu nước thương nhà!\n" +
+                    "\n" +
+                    "Khói nhà máy cuộn trong sương núi\n" +
+                    "Kèn gọi quân văng vẳng cánh đồng\n" +
+                    "Ôm đất nước những người áo vải\n" +
+                    "Đã đứng lên thành những anh hùng.\n" +
+                    "\n" +
+                    "Ngày nắng đốt theo đêm mưa dội\n" +
+                    "Mỗi bước đường mỗi bước hy sinh\n" +
+                    "Trán cháy rực nghĩ trời đất mới\n" +
+                    "Lòng ta bát ngát ánh bình minh.\n" +
+                    "\n" +
+                    "Súng nổ rung trời giận dữ\n" +
+                    "Người lên như nước vỡ bờ\n" +
+                    "Nước Việt Nam từ máu lửa\n" +
+                    "Rũ bùn đứng dậy sáng loà.\n" +
+                    "\n" +
+                    "1948-1955\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Bài thơ “Đất nước” được sáng tác trong một thời gian dài (1948 – 1955), gần như trong suốt thời kỳ kháng chiến chống Pháp.\n" +
+                    "- Bài thơ là một thi phẩm tiêu biểu nhất trong sự nghiệp sáng tác thơ của Nguyễn Đình Thi, có những đoạn trong “Đất nước” được lấy từ hai bài thơ “Sáng mát trong như sáng năm xưa” (1948) và “Đêm mitting” (1949). Đến năm 1955, Nguyễn Đình Thi đã viết thêm phần sau “Ôi những cánh...”\n" +
+                    "Dù bài thơ đã được viết nhiều lần trong một khoảng thời gian dài nhưng tác phẩm vẫn là một chỉnh thể nghệ thuật và là một trong những bài thơ hay nhất của Nguyễn Đình Thi và văn học Việt Nam sau Cách mạng Tháng Tám.\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Dưới đây là những mục nội dung khi tìm hiểu về bài thơ “Đất nước” mà bạn cần lưu ý:\n" +
+                    "a. Mùa thu đất nước trong hoài niệm của tác giả (từ đầu bài thơ đến “Những buổi ngày xưa vọng nói về”)\n" +
+                    "- Hình ảnh mùa thu Hà Nội hiện lên với những nét đặc trưng quen thuộc: “sáng mát trong”, “gió”, “hương cốm mới”.\n" +
+                    "+ Bức tranh mùa thu Hà Nội hiện lên chân thực, thi vị và thoáng một chút buồn qua cảm nhận của người ra đi: những buổi sáng mát trong, gió thổi, hương cốm, hơi may xao xác, phố phường Hà Nội. \n" +
+                    "+ Hình ảnh người ra đi buồn bã, lưu luyến nhưng cũng đầy sự quyết tâm lên đường chiến đấu vì hòa bình, độc lập của dân tộc “Người ra đi đầu không ngoảnh lại/ Sau lưng thềm nắng lá rơi đầy”.\n" +
+                    "=> Mùa thu Hà Nội đẹp nhưng buồn bởi nhân vật trữ tình phải chia xa Hà Nội để đấu tranh vì sự nghiệp giải phóng của dân tộc.\n" +
+                    "\n" +
+                    "- Hình ảnh mùa thu cách mạng, mùa thu của độc lập: \n" +
+                    "“Trời xanh đây là của chúng ta\n" +
+                    "Núi rừng đây là của chúng ta\n" +
+                    "Những cánh đồng thơm mát\n" +
+                    "Những ngả đường bát ngát\n" +
+                    "Những dòng sông đỏ nặng phù sa\n" +
+                    "\n" +
+                    "Nước chúng ta\n" +
+                    "Nước những người chưa bao giờ khuất\n" +
+                    "Đêm đêm rì rầm trong tiếng đất\n" +
+                    "Những buổi ngày xưa vọng nói về!”\n" +
+                    "+ Đoạn thơ đã thể hiện niềm tự hào của tác giả đối với đất nước.\n" +
+                    "+ Hình ảnh thơ giàu sức gợi, câu thơ giàu tính nhạc, phép điệp được sử dụng một cách hiệu quả.\n" +
+                    "=> Thể hiện tình yêu tha thiết, niềm tự hào về đất nước có truyền thống anh hùng, bất khuất nay đã giành được độc lập.\n" +
+                    "\n" +
+                    "b. Hình ảnh đất nước trong kháng chiến (đoạn còn lại)\n" +
+                    "- Đất nước đau thương trong chiến tranh: “những cánh đồng quê chảy máu”, “dây thép gai đâm nát trời chiều”, “bát cơm chan đầy nước mắt”,...\n" +
+                    "- Chứng kiến những tội ác mà quân địch đã làm với nhân dân ta, đất nước như bật lên nỗi căm hờn mà sẵn sàng vùng lên chiến đấu: \n" +
+                    "+ “Những đêm dài hành quân nung nấu”\n" +
+                    "+ “Xiềng xích chúng bay không khóa được...Lòng dân ta yêu nước thương nhà”\n" +
+                    "- Hình ảnh đất nước hiện lên thật chói lọi, hào hùng:\n" +
+                    "+ “Ôm đất nước những người áo vải\n" +
+                    "Đã đứng lên thành những anh hùng”.\n" +
+                    "+ “Nước Việt Nam từ máu lửa\n" +
+                    "Rũ bùn đứng dậy sáng lòa”.\n" +
+                    "=> Sử dụng hình ảnh sáng tạo, đầy sức gợi tả, gợi cảm, thủ pháp đối lập cùng khuynh hướng sử thi và cảm hứng lãng mạn.\n" +
+                    "c. Tổng kết giá trị nội dung\n" +
+                    "- Đất nước được cảm nhận trong chiều dài của những năm tháng kháng chiến.\n" +
+                    "- Cảm xúc, suy tư của tác giả về đất nước: vừa gần gũi nhưng cũng thật thiêng liêng, vĩ đại và anh hùng.\n",
+                image: '/conversation-images/33.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Giá trị nghệ thuật:\n" +
+                    "- Các câu thơ dài, ngắn xen kẽ nhau -> tạo nhịp điệu biến đổi linh hoạt.\n" +
+                    "- Hình ảnh sinh động, biểu cảm.\n" +
+                    "- Nhà thơ đã diễn tả sâu sắc, tinh tế về tâm trạng, tình cảm của nhân vật trữ tình. \n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
