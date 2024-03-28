@@ -2471,17 +2471,17 @@ export const conversation = [
                         pos: 4
                     },
                     {
-                        text: "Phong cách sáng tác",
+                        text: "Khám phá tác phẩm",
                         action: ButtonAction.RouterConversation,
                         pos: 6
                     },
                     {
-                        text: "Khám phá tác phẩm",
+                        text: "Khái quát nội dung và nghệ thuật.",
                         action: ButtonAction.RouterConversation,
                         pos: 13
                     },
                     {
-                        text: "Khái quát nội dung và nghệ thuật. ",
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
                         action: ButtonAction.PlayGame,
                     }
                 ]
@@ -2688,17 +2688,17 @@ export const conversation = [
                         pos: 4
                     },
                     {
-                        text: "Phong cách sáng tác",
+                        text: "Khám phá tác phẩm",
                         action: ButtonAction.RouterConversation,
                         pos: 6
                     },
                     {
-                        text: "Khám phá tác phẩm",
+                        text: "Khái quát nội dung và nghệ thuật.",
                         action: ButtonAction.RouterConversation,
                         pos: 13
                     },
                     {
-                        text: "Khái quát nội dung và nghệ thuật. ",
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
                         action: ButtonAction.PlayGame,
                     }
                 ]
@@ -2805,6 +2805,133 @@ export const conversation = [
     {
         id: 25,
         conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé! ",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một tác phẩm tiêu biểu của nhà thơ Xuân Diệu, đó là bài thơ “Thơ duyên”. Bây giờ bạn hãy lựa chọn những điều mà bạn muốn khám phá về bài thơ “Thơ duyên” của Xuân Diệu nhé! ",
+                buttons: [
+                    {
+                        text: "Đọc tác phẩm ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Tìm hiểu chung về tác phẩm",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Khám phá tác phẩm",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Khái quát nội dung và nghệ thuật ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Trần Đăng Khoa sinh vào tháng 4/1958 tại huyện Nam Sách, Hải Dương. Ông là nhà thơ, nhà báo và biên tập viên của Tạp chí Văn nghệ Quân đội, cũng như hội viên của Hội nhà văn Việt Nam. Hiện tại, ông đang giữ chức vụ Phó Bí thư Đảng ủy Đài tiếng nói Việt Nam.",
+                image: '/conversation-images/73.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "-\tXuất xứ: in trong Tuyển tập Xuân Diệu (thơ), NXB Văn học, Hà Nội, 1986, 100-101)\n" +
+                    "-\tThể thơ: thất ngôn \n" +
+                    "-\tBố cục:  3 phần \n" +
+                    "+ Khổ 1: Khung cảnh một buổi chiều thu \n" +
+                    "+Khổ 2, 3: Sự hòa hợp trong tâm hồn nhà thơ \n" +
+                    "+Khổ 4,5: Vạn vật trong thơ duyên trở nên có linh tính \n" +
+                    "-\tNhan đề: \n" +
+                    "+ “duyên”: bức tranh thu ở đây là sự giao hòa, giao duyên tựa như tự nhiên mà có giữa thiên nhiên với thiên nhiên, con người với thiên nhiên và con người với con người. \n" +
+                    "+Thơ duyên nói về những duyên tình đẹp đẽ ấy.  \n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Ở tác phẩm “Thơ duyên” của Xuân Diệu, ta có thể khám phá tác phẩm theo những khía cạnh sau: ",
+                image: '/conversation-images/74.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Khái quát nội dung và nghệ thuật",
+                image: '/conversation-images/75.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
