@@ -2441,6 +2441,201 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một tác phẩm tiêu biểu của nhà thơ Thạch Lam, đó là truyện ngắn trữ tình “Dưới bóng hoàng lan”. Bây giờ bạn hãy lựa chọn những điều mà bạn muốn khám phá về bài thơ “Dưới bóng hoàng lan” của Thạch Lam nhé! ",
+                buttons: [
+                    {
+                        text: "Đọc tác phẩm ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Tìm hiểu chung về tác phẩm ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Phong cách sáng tác",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Khám phá tác phẩm",
+                        action: ButtonAction.RouterConversation,
+                        pos: 13
+                    },
+                    {
+                        text: "Khái quát nội dung và nghệ thuật. ",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Bạn có thể đọc tác phẩm “Dưới bóng hoàng lan” ở đây nhé! \n" +
+                    "Link: \n" +
+                    "https://vi.wikisource.org/wiki/D%C6%B0%E1%BB%9Bi_b%C3%B3ng_ho%C3%A0ng_lan\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "\t-\tThể loại: truyện ngắn trữ tình \n" +
+                    "-\tXuất xứ: in trong Tuyển tập Thạch Lam \n" +
+                    "-\tPhương thức biểu đạt: Tự sự kết hợp biểu cảm \n" +
+                    "-\tNgười kể chuyện: Ngôi thứ ba \n" +
+                    "-\tTóm tắt văn bản: \n" +
+                    " “Dưới bóng hoàng lan” là truyện ngắn không có cốt truyện. Tác phẩm có 3 nhân vật: hai bà cháu, Nga. Thanh là một đứa trẻ mồ côi, người bà đã một mình nuôi nấng, chăm sóc Thanh. Thanh đi tỉnh làm, lần trở về thăm bà gần nhất cách đó đã hai năm. Mái nhà xưa và bóng bà “che mát” tâm hồn đứa cháu; hương thơm và bóng hoàng lan ướp hương và ủ ấp cho một mối tình êm đẹp “dịu ngọt chăng tơ”…\t\n" +
+                    "(3)\tKHÁM PHÁ TÁC PHẨM \n" +
+                    "1\tỞ tác phẩm “Dưới bóng hoàng lan” của Thạch Lan, ta có thể khám phá tác phẩm theo những khía cạnh sau: \t3.1.\tNgôi kể chuyện\n" +
+                    "3.2.\tTâm trạng của Thanh khi trở về nhà bà\n" +
+                    "3.3.\tTình cảm của Thanh và Nga \n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Ở tác phẩm “Dưới bóng hoàng lan” của Thạch Lan, ta có thể khám phá tác phẩm theo những khía cạnh sau: ",
+                buttons: [
+                    {
+                        text: "Ngôi kể chuyện",
+                        action: ButtonAction.RouterConversation,
+                        pos: 7
+                    },
+                    {
+                        text: "Tâm trạng của Thanh khi trở về nhà bà",
+                        action: ButtonAction.RouterConversation,
+                        pos: 9
+                    },
+                    {
+                        text: "Tình cảm của Thanh và Nga ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 11
+                    },
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.NoAction,
+                text: "-\tTruyện được kể bằng lời của người kể chuyện ngôi thứ ba. \n" +
+                    "-\tĐiểm nhìn: \n" +
+                    "+ Từ người kể chuyện \n" +
+                    "+ Từ nhân vật Thanh \n" +
+                    "Tạo không khí trữ tình cho câu chuyện \n"
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    }
+                ]
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.ShowImage,
+                text: "Tâm trạng của thanh khi trở về nhà bà",
+                image: '/conversation-images/67.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    }
+                ]
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.ShowImage,
+                text: "Tình cảm của Thanh và Nga",
+                image: '/conversation-images/68.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Khái quát về nội dung tác phẩm",
+                image: '/conversation-images/69.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
