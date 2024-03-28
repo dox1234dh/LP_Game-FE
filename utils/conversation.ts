@@ -1462,6 +1462,134 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu lần này sẽ đưa bạn tới ga  để hiểu rõ hơn tại sao nơi đây lại là nguồn cảm hứng sáng tác của Nguyễn Trãi cũng như thông điệp mà ông muốn gửi gắm qua nghệ thuật nhé! Còn bây giờ, bạn đã sẵn sàng cho chuyến đi này hay chưa, hãy cùng đoàn tàu chiếm lĩnh tri thức tiếp thôi nào!",
+                buttons: [
+                    {
+                        text: "Thơ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Vị trí, hoàn cảnh sáng tác",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Nội dung",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Nghệ thuật ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "“ Đêm khuya văng vẳng trống canh dồn,\n" +
+                    "   Trơ cái hồng nhan với nước non.\n" +
+                    "   Chén rượu hương đưa say lại tỉnh,\n" +
+                    "   Vầng trang bóng xế khuyết chưa tròn.\n" +
+                    "   Xiên ngang mặt đất, rêu từng đám, \n" +
+                    "   Đâm toạc chân mây, đá mấy hòn.\n" +
+                    "   Ngán nỗi xuân đi xuân lại lại,\n" +
+                    "   Mảnh tình san sẻ tí con con!”\n" +
+                    "\n" +
+                    "Thơ Hồ Xuân Hương, NXB Văn học, Hà Nội, 1987\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "-\t“Tự tình” II  nằm trong chùm thơ Nôm “Tự tình” gồm ba bài của nữ sĩ Hồ Xuân Hương trong tổng số 50 bài bà để lại.\n" +
+                    "-\tBài thơ là tiếng nói quyết liệt đấu tranh cho quyền được hưởng hạnh phúc của người phụ nữ phong kiến; thể hiện nỗi thương cảm với thân phận và khẳng định, đề cao vẻ đẹp, khát vọng người phụ nữ nói chung và Hồ Xuân Hương nói riêng.\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Nội dung của bài tự tình",
+                image: '/conversation-images/63.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "-\tNgôn ngữ thơ điêu luyện, bộc lộ được hết tài năng và phong cách của tác giả như sử dụng từ ngữ, hình ảnh giàu sức tạo hình và giàu giá trị biểu cảm, đa nghĩa,…\n" +
+                    "-\tNghệ thuật đảo, nghệ thật tả cảnh ngụ tình, sử dụng động từ mạnh, biện pháp ẩn dụ được sử dụng thường xuyên và linh hoạt…\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
