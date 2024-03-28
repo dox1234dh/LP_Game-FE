@@ -14,11 +14,11 @@ answerC.src="images/SwordFish.png";
 var answerD = new Image();
 answerD.src="images/Tutle.png";
 var answerE = new Image();
-answerD.src="images/FishHurt.png";
+answerE.src="images/FishHurt.png";
 var answerF = new Image();
-answerD.src="images/Eel.png";
+answerF.src="images/Eel.png";
 var answerG = new Image();
-answerD.src="images/octopus2.png";
+answerG.src="images/octopus2.png";
 
 
 class gold {

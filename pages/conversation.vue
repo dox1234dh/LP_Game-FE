@@ -81,13 +81,14 @@ async function savePlayLog({score, status} : any) {
       status: Number(status),
       stage: Number(id.value)
     });
-  } catch (error) {
+  } catch (error : any) {
+    if (error.status === 401) {
+      logUserOut();
+      await router.replace("/login")
+      return;
+    }
     message.error("Có lỗi xảy ra");
   }
-  if (data == 401) {
-    logUserOut()
-    await router.replace("/login")
-  }
-  else await router.replace('/');
+  await router.replace('/');
 }
 </script>

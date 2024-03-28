@@ -21,9 +21,6 @@ export async function apiSavePlayLog({score, stage, status}: savePlayLog) {
             "status": status
         },
     });
-    if (data.status == 401) {
-        return 401;
-    }
     if (data) {
         return true;
     }
