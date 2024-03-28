@@ -2957,6 +2957,132 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé! ",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một tác phẩm tiêu biểu của nhà thơ đồng quê “Nguyễn Bính”, đó là bài thơ “Xuân về”. Bây giờ bạn hãy lựa chọn những điều mà bạn muốn khám phá về bài thơ “Xuân về” của Nguyễn Bính nhé! ",
+                buttons: [
+                    {
+                        text: "Đọc tác phẩm",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Tìm hiểu chung về tác phẩm ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Khám phá tác phẩm ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Khái quát nội dung và nghệ thuật ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Đọc tác phẩm",
+                image: '/conversation-images/76.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "-\tThể thơ: tự do\n" +
+                    "-\tXuất sứ: sáng tác năm 1937 trong Tuyển tập thơ Nguyễn Bính. \n" +
+                    "-\tNhan đề: thể hiện rõ cảm nhận của tác giả về sự thay đổi cảnh sắc, con người khi mùa không khí mùa xuân đang bắt đầu tràn ngập khắp các con đường ngõ xóm, tất cả tạo nên một nét xuân thuần hậu, nhẹ nhàng, chất phác và mang đậm hơi thở mùa xuân đất Bắc. \n" +
+                    "-\tBố cục: \n" +
+                    "+ Khổ 1: vẻ đẹp khi gió xuân về\n" +
+                    "+Khổ 2: vẻ đẹp khi nắng xuân về\n" +
+                    "+Khổ 3: Vẻ đẹp đồng quê khi xuân về \n" +
+                    "+Khổ 4: cảnh đi trẫy hội mùa xuân\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Khám phá tác phẩm",
+                image: '/conversation-images/77.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Khái quát về nội dung và nghệ thuật ",
+                image: '/conversation-images/78.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
