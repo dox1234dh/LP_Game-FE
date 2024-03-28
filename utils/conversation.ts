@@ -309,6 +309,155 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu lần này sẽ đưa bạn tới gặp một nhà chính trị, nhà văn, nhà văn hóa lớn cũng như một cây bút lớn của dân tộc Việt Nam – Nguyễn Trãi. Còn bây giờ, bạn đã sẵn sàng cho chuyến đi này hay chưa, hãy cùng đoàn tàu chiếm lính tri thức tiếp thôi nào!",
+                buttons: [
+                    {
+                        text: "Tiểu sử",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Sự nghiệp văn học",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Phong cách sáng tác",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Các tác phẩm tiêu biểu",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "- Hiệu là Ức Trai, quê gốc tại Chí Linh, Hải Dương, lớn lên ở Thường Tín, Hà Tây.\n" +
+                    "- Sinh ra trong gia đình có cha là tiến sĩ cuối đời Trần, mẹ mất sớm, tuổi thơ của anh em Nguyễn Trãi ở nhà ông ngoại, rồi lại quay về sống bên cha dù sau đó lại bị quân Minh bắt được và giam lỏng.\n" +
+                    "- Ông từng đỗ Thái học sinh và cùng cha ra làm quan dưới triều Hồ.\n" +
+                    "- Nhà Hồ thất thủ, ông có những năm tháng về quê ở ẩn, phiêu bạt, tích lũy được rất nhiều trải nghiệm…\n" +
+                    "- Khi nhà Lê thay thế nhà Hồ cũng là một bước ngoặt lớn trong cuộc đời ông, một lần nữa ra làm quan và nắm giữ chức vụ quan trọng.\n" +
+                    "- Ông bị vu oan cho tội giết vua và phải chịu án tru di tam tộc, thơ văn của ông cũng bị tiêu hủy và cấm đoán vào năm 1442.\n" +
+                    "- Mãi tới năm 1464, vua Lê Thánh Tông mới minh oan cho Nguyễn Trãi và ban lệnh tìm kiếm, khắc in những di cảo của ông.\n",
+                image: '/conversation-images/36.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "- Sự nghiệp của ông khá đồ sộ: Là bậc đại anh hùng dân tộc, một nhà chính trị, quân sư, nhà ngoại giao, nhà văn hóa, nhà thơ kiệt xuất của lịch sử trong thời đại phong kiến Việt Nam.\n" +
+                    "- Kéo theo đó là số lượng di cảo ông để lại cho đời là vô cùng lớn và rất nhiều di sản quý báu, trong đó nổi bật là những sáng tác được viết bằng chữ Hán và chữ Nôm, thuộc nhiều lĩnh vực: quân sự, chính trị, lịch sử, địa lí, văn học,…\n" +
+                    "- Cuộc đời ông có nhiều lần bị oan vì tính thanh bạch của mình, khiến ông càng khép mình lại và lui về ở ẩn nhưng lòng vẫn không nguôi hướng về thế sự. Thời điểm này cũng là lúc số lượng tác phẩm của ông ngày một dày lên vì chỉ có thiên nhiên và văn chương bầu bạn cùng ông lúc này.\n" +
+                    "- Tham gia vào nghĩa quân Lam Sơn giúp con đường văn chương của ông nở rộ và thêm niềm tin vào chính quyền, ông lại ra giúp nước một lần nữa và để lại cho đời những tác phẩm kiệt xuất… \n",
+                image: '/conversation-images/37.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "1.\tNội dung thơ văn\n" +
+                    "-\tThơ ông rất đa dạng, phong phú về đề tài, cảm hứng sáng tác…\n" +
+                    "-\tLấy tư tưởng Nhân nghĩa từ Nho giáo làm gốc rễ, đặt dân lên làm ưu tiên nhưng có chọn lọc và sáng tạo. Với Nguyễn Trãi, nhân nghĩa trước hết là thương dân; lấy cuộc sống bình yên, no ấm của nhân dân làm mục tiêu cao nhất; cùng với đó là tôn trọng và biết ơn họ. \n" +
+                    "-\tBên cạnh đó tình yêu thiên nhiên cũng là nguồn cảm hứng lớn trong thơ văn Nguyễn Trãi; bởi lẽ tâm hồn ông luôn rộng mở, tinh tế, lãng mạn – nâng niu từng vẻ đẹp, từng khoảnh khắc giao hòa cùng thiên nhiên… \n" +
+                    "-\tNhưng ông vẫn luôn vướng bận bên những ưu tư về thế sự bởi tư tưởng trung quân yêu dân, dù đã về ở ẩn nhưng tâm hồn ông vẫn luôn thể hiện rõ hòa cảm, khát vọng xây dựng đất nước ngày càng độc lập, thái bình, hưng thịnh của Nguyễn Trãi…\n" +
+                    "\n" +
+                    "2.\tĐặc điểm nghệ thuật\n" +
+                    "Là sự kết tinh của văn chính luận, thơ chữ Hán và thơ chữ Nôm cùng nhiều thành tựu nghệ thuật đặc sắc, góp phần quan trọng vào sự phát triển, hoàn thiện một số thể loại văn học trung đại Việt Nam…\n" +
+                    "-\tVăn chính luận của Nguyễn Trãi luôn đạt tới trình độ mẫu mực phần lớn đều hết sức thuyết phục: sự kết hợp giữa lí lẽ sắc bén, dẫn chứng xác đáng; cách lập luận và bố cụ chặt chẽ; ngôn ngữ hàm súc, kết hợp nhiều phong cách ngôn ngữ và nhiều phương thức biểu đạt, giọng điệu truyền cảm…\n" +
+                    "-\tThơ chữ Hán hầu hết được sáng tác bằng thể thơ Đường luật cùng sự phá cách, đạt tới trình độ nhuần nhuyễn, điêu luyện; ngôn ngữ cô đúc; nghệ thuật tả cảnh, tả tình, tinh tế, tài hoa, “ý tại ngôn ngoại”…\n" +
+                    "-\tThơ chữ Nôm của ông được đánh giá là đỉnh cao của dòng thơ quốc âm (tiếng Việt) thời trung đại. Ngôn ngữ thơ giản dị, đậm đà tính dân tộc…\n",
+                image: '/conversation-images/38.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Sáng tác ông để lại cho đời sau là cả một kho tàng, chưa có thống kê chính xác có tổng cộng bao nhiêu tác phẩm của Nguyễn Trãi, bởi lẽ thời gian ở ẩn là khoảng thời gian tác giả sáng tác thật nhiều, mà cũng là lúc các sáng tác ấy khó thống kê được nhất. \n" +
+                    "Nhưng nổi bật hơn cả vẫn là một loạt những tập thơ như:\n" +
+                    "\n" +
+                    "-\t“Ức Trai thi tập”\n" +
+                    "-\t“Quân trung từ mệnh tập”\n" +
+                    "-\t“Quốc ân thi tập”\n" +
+                    "Hay một số bài thơ nổi tiếng:\n" +
+                    "-\t“Bình Ngô đại cáo”\n" +
+                    "-\t“Dục Thúy sơn”\n" +
+                    "-\tDư địa chí\n" +
+                    "-\t…………\n",
+                image: '/conversation-images/39.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
