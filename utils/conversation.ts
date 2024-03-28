@@ -4563,6 +4563,180 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một tác phẩm của nhà thơ Trần Đăng Khoa, viết về tinh thần lạc quan, tươi trẻ, tình yêu đất nước của những người lính đảo nơi Trường Sa. Bài thơ mang tên “Lính đảo hát tình ca trên đảo”. Bây giờ, bạn hãy lựa chọn kiến thức mà bạn muốn tìm hiểu nhé!",
+                buttons: [
+                    {
+                        text: "Đọc bài thơ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Hoàn cảnh sáng tác",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Nội dung, Nghệ thuật",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Các tác phẩm khác viết về người lính đảo của tác giả Trần Đăng Khoa",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Đá san hô kê lên thành sân khấu\n" +
+                    "Vài tấm tôn chôn mấy cánh gà\n" +
+                    "Em đừng trách bọn chúng anh tạm bợ\n" +
+                    "Chẳng phông màn nào chịu nổi gió Trường Sa\n" +
+                    "\n" +
+                    "Gió rát mặt, đảo luôn thay hình dạng\n" +
+                    "Sỏi cát bay như lũ chim hoang\n" +
+                    "Cứ mặc nó. Nào hỡi các chiến hữu\n" +
+                    "Ta bắt đầu thôi. Mây nước đã mở màn\n" +
+                    "\n" +
+                    "Sân khấu lô nhô mấy chàng đầu trọc\n" +
+                    "Người xem ngổn ngang cũng rặt lính trọc đầu\n" +
+                    "Nước ngọt hiếm không lẽ dành gội tóc\n" +
+                    "Lính trẻ lính già đều trọc tếu như nhau\n" +
+                    "\n" +
+                    "Có lúc vui cứ gọi đùa sư cụ\n" +
+                    "Là bà con xa với bụt ốc đây mà\n" +
+                    "Thôi lặng yên nghe có gì đang sóng sánh\n" +
+                    "Hoá ra là sư cụ hát tình ca\n" +
+                    "\n" +
+                    "Những giai điệu ngang tàng như gió biển\n" +
+                    "Nhưng lời ca toàn nhớ với thương thôi\n" +
+                    "Đêm buông xuống nhìn nhau không rõ nữa\n" +
+                    "Cứ ngỡ như vỏ ốc cất thành lời\n" +
+                    "\n" +
+                    "Rằng có đêm trăng dắt em đi dạo\n" +
+                    "Gương mặt em dịu dàng hàng cây cũng tươi xinh\n" +
+                    "Mở mắt chung chiêng lưng trời sóng vỗ\n" +
+                    "Và tay mình lại nắm lấy tay mình\n" +
+                    "\n" +
+                    "Người yêu chúng anh ơi, các em ở phương nào?\n" +
+                    "Tóc em ngắn hay dài có trời mà biết được\n" +
+                    "Những bóng dáng nào sẽ đến với chúng anh\n" +
+                    "Trông bốn phía chỉ âm u mây nước\n" +
+                    "\n" +
+                    "Nào hát lên cho mây nước biết\n" +
+                    "Rằng chúng ta là những con người\n" +
+                    "Yêu em thủy chung hơn muối mặn\n" +
+                    "Dù thư tình chưa biết gửi cho ai...\n" +
+                    "\n" +
+                    "Nào hát lên cho đêm tối biết\n" +
+                    "Rằng tình yêu sáng trong ngực ta đây\n" +
+                    "Ta đứng vững giữa muôn trùng sóng gió\n" +
+                    "Tổ quốc Việt Nam bắt đầu từ nơi này…\n" +
+                    "\n" +
+                    "Điệu tình ca cứ ngân lên chót vót\n" +
+                    "Bỗng bàng hoàng nhìn lại phía sau\n" +
+                    "Ngoài mép biển, người đâu lên đông thế\n" +
+                    "Ồ, hoá ra toàn những đá trọc đầu...\n" +
+                    "\n" +
+                    "Đảo Sơn Ca, tháng 5-1982\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Bài thơ “Lính đảo hát tình ca trên đảo” được nhà thơ sáng tác trong những năm 80 của thế kỉ trước, khi tác giả đang là người lính hải quân cùng đồng đội thực hiện nhiệm vụ ở ngoài Trường Sa sóng nước. Những hình ảnh, chi tiết, nhân vật trong bài thơ chính là một phần hiện thực trong cuộc sống của người lính đảo.",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Những kiến thức cơ bản mà bạn cần lưu ý.\n" +
+                    "1. Thể thơ: Tự do\n" +
+                    "2. Bố cục nội dung:\n" +
+                    "Đoạn 1 (4 khổ đầu): giới thiệu về những người lính đảo\n" +
+                    "Đoạn 2 (Còn lại): Bản tình ca của những người lính đảo\n" +
+                    "3. Tìm hiểu chi tiết tác phẩm “Lính đảo hát tình ca trên đảo” (Sơ đồ nội dung và nghệ thuật)\n",
+                image: '/conversation-images/81.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Các tác phẩm khác viết về người lính đảo của tác giả Trần Đăng Khoa.\n" +
+                    "- Thơ tình người lính biển\n" +
+                    "- Đợi mưa trên đảo Sinh Tồn\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
