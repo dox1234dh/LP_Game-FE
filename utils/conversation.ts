@@ -831,6 +831,251 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu sẽ tiếp tục đưa bạn tìm hiểu về một tác phẩm tiêu biểu của đại thi hào Nguyễn Trãi – “Bình Ngô đại cáo” – còn được coi là bản Tuyên ngôn độc lập thứ hai của dân tộc Việt Nam ta. Bây giờ, bạn hãy lựa chọn kiến thức mà bạn muốn tìm hiểu nhé!",
+                buttons: [
+                    {
+                        text: "Thể “cáo”",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Đọc bài thơ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Hoàn cảnh sáng tác",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Nội dung",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Nghệ thuật",
+                        action: ButtonAction.RouterConversation,
+                        pos: 10
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "THỂ CÁO: \n" +
+                    "- Là một thể văn hành chính cổ, mang tính pháp luật, có nguồn gốc từ Thượng thư (Trung Quốc), do nhà vua hoặc chủ tướng ban bố một mệnh lệnh, chủ trương, chính sách,...cho toàn dân chúng được biết.\n" +
+                    "- Căn cứ vào nội dung, mục đích, phạm vi ban bố, thể văn cáo có thể phân thành nhiều loại, nhưng nhìn chung, đều có ý nghĩa tuyên bố về một sự kiện trọng đại của quốc gia. \n" +
+                    "- Hình thức: có thể viết bằng văn xuôi, văn vần, biền văn.\n" +
+                    "- Đặc điểm: có lập luận chặt chẽ, bố cục rõ ràng, ý tứ hùng hồn, hàm ý mệnh lệnh. \n",
+                image: '/conversation-images/58.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "(Vì dung lượng bài thơ rất dài nên) học sinh có thể tham khảo toàn bộ bài thơ qua các hình thức sau:\n" +
+                    "\n" +
+                    "-\tĐọc SGK Ngữ văn 10, Kết nối tri thức với cuộc sống, tập 2 trang 11.\n" +
+                    "-\tNghe đọc: https://www.youtube.com/watch?v=5jKf73S6iUk \n" +
+                    "-\tĐọc những dị bản khác nhau từ bản tiếng Hán gốc qua kênh: https://www.thivien.net/Nguy%E1%BB%85n-Tr%C3%A3i/B%C3%ACnh-Ng%C3%B4-%C4%91%E1%BA%A1i-c%C3%A1o/poem-mLEGY5d9nFI0RH280X-vIQ\n",
+                image: '/conversation-images/59.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Cuối năm 1427, cuộc kháng chiến chống giặc Minh của nhân dân ta kết thúc thắng lợi, Nguyễn Trãi thừa lệnh Lê Lợi viết “Bình Ngô đại cáo”. Tác phẩm được ban bố vào tháng Chạp năm Đinh Mùi (đầu năm 1428 dương lịch). Tác phẩm mang tính chất của một bản tuyên ngôn mở đầu cho một triều đại mới, một kỉ nguyên mới của đất nước. Với mục đích tuyên bố, thông báo cho toàn thể nhân dân biết về sự kiện vô cùng trọng đại của dân tộc và đất nước ta, khẳng định độc lập chủ quyền của nước Đại Việt và vai trò của nhân dân cùng nghĩa quân Lam Sơn lúc bấy giờ…",
+                image: '/conversation-images/60.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "Bố cục 4 phần:\n" +
+                    "1. Nguyên lí chính nghĩa của cuộc khởi nghĩa Lam Sơn\n" +
+                    "a. Tư tưởng nhân nghĩa\n" +
+                    "- Theo quan niệm của đạo Nho: nhân nghĩa là mối quan hệ tốt đẹp giữa người với người trên cơ sở tình thương và đạo lí. \n" +
+                    "- Nhân nghĩa cũng là truyền thống tốt đẹp của dân tộc Việt Nam.\n" +
+                    "- Đối với Nguyễn Trãi: nhân nghĩa chính là để “yên dân” (lo cho dân cuộc sống ấm no, hạnh phúc) và “trừ bạo”(tiêu diệt kẻ tàn bạo) -> tư tưởng mới mẻ với quan điểm “lấy dân làm gốc”, phát triển hơn so với tư tưởng của Nho giáo.\n" +
+                    "=> Khẳng định lập trường chính nghĩa của ta và tính chất phi nghĩa của kẻ thù xâm lược. \n" +
+                    "b. Chân lí độc lập dân tộc\n" +
+                    "- Có cơ sở chắc chắn từ thực tiễn của lịch sử: mang tính hiển nhiên vốn có từ lâu đời thể hiện qua các cụm “từ trước”, “đã lâu”, “vốn xưng”,...\n" +
+                    "- Nguyễn Trãi cũng đưa ra những yếu tố căn bản để xác định độc lập, chủ quyền của dân tộc: nền văn hiến lâu đời, cương vực lãnh thổ, phong tục tập quán, lịch sử, truyền thống, anh hùng hào kiệt.\n" +
+                    "c. Nghệ thuật của đoạn văn\n" +
+                    "- Tác giả sử dụng những từ ngữ thể hiện tính chất hiển nhiên, vốn có, lâu đời của nước Đại Việt như “từ trước”, “vốn có”,...\n" +
+                    "- Sử dụng biện pháp so sánh đặt ta ngang hàng với Trung Quốc, ngang hàng về chính trị, tổ chức chế độ, quản lí quốc gia. \n" +
+                    "- Câu văn biền ngẫu cân xứng, nhịp nhàng. \n" +
+                    "- Cách lập luận kết hợp hài hòa giữa lí luận và thực tiễn: sau khi nên nguyên lí nhân nghĩa, đã nên chân lí khách quan bằng các sự thật lịch sử.\n" +
+                    "-> Tạo nên sức thuyết phục về sức mạnh của nhân nghĩa, của chân lí.\n" +
+                    "2. Tội ác của kẻ thù xâm lược\n" +
+                    "- Vạch trần âm mưu của giặc Minh mượn danh nghĩa phù Trần diệt Hồ để cướp nước ta:\n" +
+                    "“Nhân họ Hồ chính sự phiền hà\n" +
+                    "Để trong nước lòng dân oán hận\n" +
+                    "Quân cuồng Minh thừa cơ gây họa”.\n" +
+                    "-> Chúng đã lấy danh nghĩa giúp nước ta nhưng thực chất là cướp nước.\n" +
+                    "- Tác giả đi sâu tố cáo những chủ trương cai trị phản nhân đạo của giặc Minh:\n" +
+                    "+ Hủy hoại cuộc sống của người ân bằng hành động diệt chủng, tàn sát người vô tội: “Nướng dân đen trên ngọn lửa hung tàn,\n" +
+                    "Vùi con đỏ xuống dưới hầm tai vạ”.\n" +
+                    "-> tội ác man rợ, tàn sát người vô tội theo hình phạt thời trung cổ.\n" +
+                    "+ Lừa mị dân chúng, gây cảnh đao binh: “dối trời lừa dân, gây binh kết oán”.\n" +
+                    "+ Tham lam, vơ vét của cải, bóc lột nhân dân:: “nặng thuế khoá, người bị ép xuống biển dòng lưng mò ngọc, kẻ bị đem vào núi đãi cát tìm vàng, vét sản vật, bắt chim trả, bẫy hươu đen, no nê chưa chán”.\n" +
+                    "+ Huỷ hoại môi trường sống của con người: “Tàn hại cả giống côn trùng cây cỏ”.\n" +
+                    "+ Nô dịch, khổ sai dân chúng: “xây nhà, đắp đất, phu phen”.\n" +
+                    "- Hình ảnh kẻ thù: “Thằng há miệng, đứa nhe răng, máu mỡ bấy no nê chưa chán”.\n" +
+                    "-> Khắc hoạ thành công bộ mặt khát máu của quân xâm lược.\n" +
+                    "- Bốn câu thơ cuối diễn tả tội ác chất chồng của giặc và nỗi căm hờn chất chứa của ND ta:\n" +
+                    "+ Lấy cái vô hạn “trúc Nam Sơn” để nói vô hạn (tội ác của giặc).\n" +
+                    "+ Dùng cái vô cùng “nước Đông Hải” để nói cái vô cùng ( sự nhơ bẩn của kẻ thù).\n" +
+                    "+ Câu văn đầy hình tượng và đanh thép đã lột tả được sâu sắc tội ác “Lẽ nào trời đất dung tha/ Ai bảo thần dân chịu được”.\n" +
+                    "=> Tác giả đứng trên lập trường nhân bản để tố cáo tội ác của giặc.\n" +
+                    "\n" +
+                    "3. Ý chí, khát vọng của bậc chủ tướng\n" +
+                    "* Buổi đầu khởi nghĩa\n" +
+                    "- Những khó khăn ở buổi đầu khởi nghĩa:\n" +
+                    "+ Địa bàn dấy nghĩa hẻo lánh\n" +
+                    "+ Thế ta và giặc không cân sức\n" +
+                    "+ Thiếu nhân tài\n" +
+                    "+ Có lúc bị vây, lương thực hết, quân lính chỉ còn mấy người\n" +
+                    "* Sức mạnh giúp nghĩa quân vượt qua những khó khăn thử thách của buổi đầu dấy nghiệp thể hiện qua hình tượng Lê Lợi - lãnh tụ của nghĩa quân.\n" +
+                    "- Lê Lợi có ý thức tự giác về sứ mệnh của mình. Ông xem mối thù của nước, nỗi đau của dân như chính mình, ngày đêm canh cánh bên lòng suốt 20 năm: (Ngẫm thù lớn há đội trời chung…Nếm mật nằm gai há phải một hai sớm tối)\n" +
+                    "- Lê Lợi ngày đêm suy nghiệm về lẽ hưng vong của các triều đại để tìm ra đường lối đánh giặc cứu nước\n" +
+                    "+ Đó là đường lối cứu nước dựa vào toàn dân và phương châm: Đem đại nghĩa để thắng hung tàn/ Lấy chí nhân để thay cường bạo\n" +
+                    "+ Đại nghĩa: là bảo vệ độc lập chủ quyền của đất nước, và đem lại cuộc sống yên ổn cho dân\n" +
+                    "+ Chí nhân: là lòng nhân nghĩa ở mức cao nhất, đối với kẻ bại trận ta không giết, không gây thù oán để gây hậu họa.\n" +
+                    "+ Khi đã tìm được đường lối cứu nước. Lê Lợi chủ động giải quyết ngay những khó khăn trước mắt.\n" +
+                    "+ Tự ta ta phải dốc lòng, vội vã hơn cứu người chết đuối\n" +
+                    "+ Ông tìm kiếm người tài: Cỗ xe cầu hiền, thường châm chăm còn dành phía tả\n" +
+                    "+ Ông tập hợp nhân dân dưới cờ đại nghĩa, tạo thành một khối đoàn kết bền vững: Nhân dân bốn cõi một nhà/ Dựng cần trúc ngọn cờ phấp phới – Tướng sĩ một lòng phụ tử/ Hòa nước sông chén rượu ngọt ngào\n" +
+                    "+ Lê Lợi có một chiến lược, chiến thuật đúng đắn: Thế trận xuất kì/ Lấy yếu chống mạnh; Dùng quân mai phục/ Lấy ít địch nhiều\n" +
+                    "- Đoạn văn có nhiều từ ngữ diễn tả tâm trạng Lê Lợi (yếu tố biểu cảm): ngẫm, căm, đau lòng nhức óc, giận, suy xét, đắn đo, trằn trọc, băn khoăn…\n" +
+                    "\n" +
+                    "4. Diễn biến chính của cuộc khởi nghĩa\n" +
+                    "* Giai đoạn mở màn: Cuộc phản công là 2 trận đánh lớn: Trận Bồ Đằng sấm vang chớp giật - Miền Trà Lân trúc chẻ tro bay\n" +
+                    "- Đặc điểm nổi bật của 2 trận mở màn này là: Đánh nhanh, thắng nhanh. Địch thua và hoảng sợ không kịp trở tay \n" +
+                    "→ Lời văn ngắn gọn sắc sảo, hình ảnh so sánh rất gợi hình, gợi cảm: “sấm vang chớp giật, trúc chẻ tro bay” còn quân giặc thì “nghe hơi mà mất vía, nín thở cầu thoát thân”.\n" +
+                    "* Giai đoạn áp đảo:\n" +
+                    "- Đánh ra hướng Bắc với 2 trận: Tây Kinh quân ta chiếm lại/ Đông Đô đất cũ thu về. Đây là 2 trận diễn ra quyết liệt vì quân ta áp sát sào huyệt của địch, chúng tung lực lượng lớn ra với sự chỉ huy của các danh tướng. Kết quả:\n" +
+                    "+ Máu chảy thành sông tanh trôi vạn dặm\n" +
+                    "+ Thây chất đầy nội, nhơ để ngàn năm\n" +
+                    "+ Trần Hiệp đã phải bêu đầu\n" +
+                    "+ Lí Lượng cũng đành bỏ mạng\n" +
+                    "+ Sau giai đoạn này thì quân giặc đã: trí cùng lực kiệt, bó tay để đợi bại vong\n" +
+                    "+ Lê Lợi phát huy chiến thuật “mưu phạt tâm công” nghĩa là phá tan mưu kế của giặc và đánh tan ý chí chiến đấu của địch, không dùng giáoq giáo mà quân địch vẫn chịu thua, hàng ngũ tan rã.\n" +
+                    "- Trận diệt viện cuối cùng:\n" +
+                    "+ Bốn câu văn dài kể về việc điều binh khiển tướng của đôi bên, hai câu trên kể về giặc, hai câu dưới kể về ta \n" +
+                    "+ Những thắng lợi liên tiếp, giòn giã, được kể với giọng hả hê, tự hào + Sức mạnh tấn công của quân ta với thế long trời lở đất\n" +
+                    "- Hình ảnh quân giặc bại trận:\n" +
+                    "+ Tướng giặc thì: Đô đốc Thôi Tụ lê gối dâng tờ tạ tội/ Thượng thư Hoàng Phúc trói tay để tự xin hàng/ Tướng giặc bị cầm tù như hổ đói vẫy đuôi xin cứu mạng.\n" +
+                    "+ Quân lính thì: khiếp vía vỡ mật, xéo lên nhau để chạy thoát thân, quay gót chẳng kịp, cởi giáp ra hàng\n" +
+                    "+ Cảnh chiến trường thật là ghê sợ và cũng rất thương tâm: Lạng Giang, Lạng Sơn thây chất đầy nội….cỏ nội đầm đìa máu đen.\n" +
+                    "* Cảnh ta đối xử với giặc bại trận (Thần vũ chẳng giết hại….để nhân dân nghỉ sức)\n" +
+                    "- Lời bình phẩm của tác giả: Chẳng những mưu kế kì diệu/ Cũng là chưa thấy xưa nay.\n" +
+                    "- Hình tượng Lê Lợi: Hiện lên là một thiên tài quân sự lỗi lạc.\n" +
+                    "+ Ông đã học tập kinh nghiệm của ông cha, thực hiện chiến lược, chiến thuật “mưu phạt tâm công” nghĩa là đánh vào ý chí chiến đấu của giặc. Nhưng quân giặc “không biết lẽ ăn năn, nên đã thay lòng đổi dạ”. Vì vậy Lê Lợi đánh đuổi tới cùng, điều binh khiển tướng khẩn trương mau lẹ \n" +
+                    "+ Lê Lợi cho quân đuổi giặc đến cùng nhưng lại “mở đường hiếu sinh”\n" +
+                    "→ Ở đây ta thấy rõ vẻ đẹp nhân nghĩa trí dũng của người anh hùng Lê Lợi.\n" +
+                    "\n" +
+                    "5. Tuyên ngôn độc lập, đất nước thái bình \n" +
+                    "- Trịnh trọng và vui mừng truyền đi lời tuyên bố nền độc lập của dân tộc đã được lập lại \n" +
+                    "- Rút ra bài học lịch sử: Sự thay đổi này thực chất là sự phục hưng \n" +
+                    "-> Đấy là nguyên nhân, là điều kiện để thiết lập sự vững bền đời đời.\n" +
+                    "- Khẳng định viễn cảnh tươi sáng huy hoàng của đất nước \n" +
+                    "-> Đấy cũng là kết quả của việc kết hợp giữa sức mạnh truyền thống và sức mạnh thời đại: có hiện thực tốt đẹp hôm nay và tương lai ngày mai tươi sáng là nhờ “trời đất tổ tông khôn thiêng ngầm giúp” và cũng nhờ vào chiến công trong quá khứ.\n" +
+                    " \n",
+                image: '/conversation-images/61.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.ShowImage,
+                speaker: Character.System,
+                text: "- Các thủ pháp: so sánh, đối lập,… được sử dụng phổ biến và hiệu quả.\n" +
+                    "- Kết hợp hài hòa 2 yếu tố: chính luận sắc bén và văn chương trữ tình.\n" +
+                    "- Hình ảnh phong phú, giàu sức gợi, giàu tính biểu trưng và khái quát.\n" +
+                    "- Giọng điệu, âm hưởng mang đậm cảm hứng anh hùng ca.\n" +
+                    "=> Là áng “thiên cổ hùng văn”.\n",
+                image: '/conversation-images/62.png'
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
@@ -853,6 +1098,163 @@ export const conversation = [
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu lần này sẽ đưa bạn tới ga CẢNH NGÀY HÈ để hiểu rõ hơn về ngòi bút của Nguyễn Trãi cũng như thông điệp mà ông muốn gửi gắm qua nghệ thuật. Còn bây giờ, bạn đã sẵn sàng cho chuyến đi này hay chưa, hãy cùng đoàn tàu chiếm lĩnh tri thức tiếp thôi nào!",
+                buttons: [
+                    {
+                        text: "Thơ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Vị trí, hoàn cảnh sáng tác",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Nội dung",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Nghệ thuật",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Rồi hóng mát thuở ngày trường,\n" +
+                    "Hoè lục đùn đùn tán rợp trương.\n" +
+                    "Thạch lựu hiên còn phun thức đỏ,\n" +
+                    "Hồng liên trì đã tịn mùi hương.\n" +
+                    "Lao xao chợ cá làng ngư phủ,\n" +
+                    "Dắng dỏi cầm ve lầu tịch dương.\n" +
+                    "Lẽ có Ngu cầm đàn một tiếng,\n" +
+                    "Dân giàu đủ khắp đòi phương.\n" +
+                    "\n" +
+                    "Nguồn: Nguyễn Trãi toàn tập, Đào Duy Anh, NXB Khoa học xã hội, 1976\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "1.\tVị trí\n" +
+                    "“Bảo kính cảnh giới” là chùm thơ gồm 61 bài thơ trong tổng số 254 bài thơ của tập thơ “Quốc âm thi tập”; được viết bằng thơ Nôm Đường luật; nội dung giáo huấn và chứa đựng nhiều trăn trở, suy tư về thế sự thông qua bức tranh thiên nhiên cùng nhịp sống bình dị, bình yên nơi thôn dã. Trong đó “Cảnh ngày hè” là cái tên khác của bài “Bảo kính cảnh giới số 43”.\n" +
+                    "2.\tHoàn cảnh sáng tác \n" +
+                    "Bài thơ cũng như tập thơ “Bảo kính cảnh giới” được Nguyễn Trãi sáng tác vào những năm ông chọn lui về quê ở ẩn tại Côn Sơn, vì những hiểu lầm mà ông không còn được vua tin dùng như trước vào những năm 1437 nhưng lòng ông vân không nguôi nỗi lo cho vận mệnh của đất nước.\n" +
+                    "\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "Bài thơ chia làm 2 nội dung chính:\n" +
+                    "1. Bức tranh thiên nhiên, cuộc sống (6 câu đầu)\n" +
+                    "- Tâm thế Nguyễn Trãi:\n" +
+                    "+ Rồi: rỗi rãi\n" +
+                    "+ Ngày trường: ngày dài\n" +
+                    "+ Ngắt nhịp 1/2/3 chậm rãi\n" +
+                    "-> bài thơ được sáng tác trong những ngày tháng mà Nguyễn Trãi ở ẩn tại Côn Sơn. Lúc này ông cảm thấy được thư thái, thảnh thơi ngắm nhìn cảnh đẹp.\n" +
+                    "\n" +
+                    "- Bức tranh ngày hè:\n" +
+                    "+ “Hòe lục đùn đùn tán rợp giương”: hình ảnh cây hòe được miêu tả với màu lục, tán cây “đùn đùn” gợi vẻ đẹp của vòm lá xanh tươi, bừng bừng sức sống, che rợp cả không gian.\n" +
+                    "+ Hoa lựu: “phun thức đỏ” -> động từ “phun” khiến màu đỏ như tuôn chảy, tô đậm sắc màu cho hoa. \n" +
+                    "+ Sen hồng: tỏa ngát mùi hương.\n" +
+                    "-> dùng các động từ mạnh để diễn tả sự căng tràn của cảnh vật. Khắc họa cảnh thiên nhiên quen thuộc, gần gũi với làng quê Việt Nam.\n" +
+                    "\n" +
+                    "- Âm thanh của ngày hè:\n" +
+                    "+ Tiếng của làng nghề chài lao xao vọng lại.\n" +
+                    "+ Tiếng ve lúc mặt trời sắp lặn như tiếng đàn. \n" +
+                    "-> Đảo tính từ, từ láy lên đầu câu nhằm nhấn mạnh không khí rộn rã, tươi vui trong đời sống của nhân dân lao động.\n" +
+                    "=> Bức tranh thiên nhiên mùa hè được miêu tả từ gần tới xa, có sự kết hợp hài hòa giữa đường nét, màu sắc với âm thanh, giữa con người và cảnh vật. Tất cả đều gần gũi, bình dị, tĩnh ở bên ngoài mà tràn đầy, ứa căng sức sống ở bên trong -> Tâm hồn tinh tế, yêu thiên nhiên, yêu cuộc sống tha thiết của tác giả. \n" +
+                    "\n" +
+                    "2. Tâm tư, ước nguyện của nhà thơ (2 câu cuối)\n" +
+                    "“Lẽ có Ngu cầm đàn một tiếng,\n" +
+                    "Dân giàu đủ khắp đòi phương”.\n" +
+                    "- Điển cố “Ngu cầm”: đàn của vua Ngu Thuấn. Tương truyền vua Thuấn được vua Nghiêu ban cho cây đàn, khi rỗi rãi thường gảy khúc Nam phong. Khi tiếng đàn cất lên thì mưa thuận gió hòa, nhân dân làm ăn sung sướng no đủ. Đây cũng chính là mong ước của tác giả Nguyễn Trãi.\n" +
+                    "- Câu cuối cùng là câu thơ có 6 chữ, nhịp thơ 3/3 như dồn nén cảm xúc của tác giả. Chữ “dân” được đặt lên đầu cầu nhằm nhấn mạnh tâm tư nguyện vọng của tác giả: Làm sao để dân được sống trong đất nước thái bình muôn thuở.\n" +
+                    "\n" +
+                    "=> Như vậy, tứ thơ vận động từ bức tranh thiên nhiên ngày hè tràn đầy sức sống đến con người cùng tình yêu thiên nhiên và kết lại là mong ước cao đẹp, mong ước nhân dân khắp nơi về hạnh phúc, ấm no của nhà thơ.\tKhi người chơi lựa chọn (3)\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "- Sáng tạo thể thơ Đường luật với sự đan xen của câu 6 chữ và câu 7 chữ.\n" +
+                    "- Ngôn ngữ thơ giản dị, trong sáng, gần gũi nhưng lại giàu cảm xúc, giàu sức gợi.\n" +
+                    "- Bút phát tả cảnh ngụ tình đặc trưng của văn học trung đại (miêu tả thiên nhiên và cảnh sinh hoạt của con người để qua đó bộc lộ tâm tư, tình cảm của chính mình).\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
                 text: "Đã hoàn tất kiến thức, bạn có muốn quay lại để ôn tập không?",
                 buttons: [
                     {
@@ -872,6 +1274,169 @@ export const conversation = [
     {
         id: 12,
         conversation: [
+            {
+                actionType: ActionType.Choose,
+                speaker: Character.System,
+                text: "Tôi đã rất vui khi thấy sự quay trở lại của bạn. Hãy đồng hành cùng tôi trên chặng đường tiếp theo nhé!",
+                buttons: [
+                    {
+                        text: "SẴN SÀNG",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    },
+                    {
+                        text: "TÔI MUỐN SUY NGHĨ THÊM",
+                        action: ButtonAction.RouterConversation,
+                        pos: 0
+                    }
+                ],
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Chuyến tàu lần này sẽ đưa bạn tới ga núi Dục Thúy để hiểu rõ hơn tại sao nơi đây lại là nguồn cảm hứng sáng tác của Nguyễn Trãi cũng như thông điệp mà ông muốn gửi gắm qua nghệ thuật nhé! Còn bây giờ, bạn đã sẵn sàng cho chuyến đi này hay chưa, hãy cùng đoàn tàu chiếm lĩnh tri thức tiếp thôi nào!",
+                buttons: [
+                    {
+                        text: "Thơ",
+                        action: ButtonAction.RouterConversation,
+                        pos: 2
+                    },
+                    {
+                        text: "Vị trí, hoàn cảnh sáng tác",
+                        action: ButtonAction.RouterConversation,
+                        pos: 4
+                    },
+                    {
+                        text: "Nội dung",
+                        action: ButtonAction.RouterConversation,
+                        pos: 6
+                    },
+                    {
+                        text: "Nghệ thuật",
+                        action: ButtonAction.RouterConversation,
+                        pos: 8
+                    },
+                    {
+                        text: "Đã tìm hiểu hết tất cả, chơi thôi!",
+                        action: ButtonAction.PlayGame,
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "3\tPhiên âm\n" +
+                    "Hải khẩu hữu tiên san;\n" +
+                    "Tiền niên lu vãng hoàn.\n" +
+                    "Liên hoa phù thủy thượng;\n" +
+                    "Tiên cảnh trụy trần gian.\n" +
+                    "Tháp ảnh tram thanh ngọc;\n" +
+                    "Ba quang kính thúy hoàn.\n" +
+                    "Hữu hoài Trương Thiếu bảo;\n" +
+                    "Bi khắc tiển hoa ban.\n" +
+                    "\n" +
+                    "Dịch nghĩa\n" +
+                    "Cửa biển có ngọn núi tiên;\n" +
+                    "Năm xưa ta đã nhiều lần qua lại nơi này.\n" +
+                    "Dáng núi như đóa hoa sen nổi trên mặt nước;\n" +
+                    "Tưởng như là cõi tiên rơi xuống trần gian.\n" +
+                    "Bóng tháp trên núi soi xuống mặt nước giống như cái trâm ngọc xanh;\n" +
+                    "Ánh sang của song nước phản chiếu ngọn núi như đang soi mái tóc biếc. \n" +
+                    "Chạnh nhớ Trương Thiếu bảo,\n" +
+                    "Bia đá khắc thơ văn của ông nay đã lốm đốm rêu.\n" +
+                    "\n" +
+                    "Dịch thơ\n" +
+                    "Cửa biển có non tiên; \n" +
+                    "Từng qua lại mấy phen. \n" +
+                    "Cảnh tiên rơi cõi tục;\n" +
+                    "Mặt nước nổi hoa sen.\n" +
+                    "Bóng tháo hình trâm ngọc;\n" +
+                    "Gương sông ánh tóc huyền.\n" +
+                    "Nhớ xưa Trương Thiếu bảo; \n" +
+                    "Bia khắc dấu rêu hoen.\n" +
+                    "\tKhi người chơi lựa chọn (1)\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "-\tBài thơ được sáng tác vào thời điểm sau cuộc kháng chiến chống giặc Minh và trước khi Nguyễn Trãi về ở ẩn tại Côn Sơn.\n" +
+                    "-\tTác giả đã nhiều lần ghé qua cửa biển nơi đây nhưng lần nào cũng khiến ông mang theo những dòng tâm trạng và suy tư về sự chảy trôi của thời gian trước thiên nhiên hùng vĩ. Tức cảnh, bài thơ được ra đời.\n" +
+                    "-\tBài thơ sau đó được sưu tầm và xếp vào “Ức Trai thi tập” theo thể Ngũ ngôn luật thi (Ngũ ngôn bát cú Đường luật).\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "5\tBài thơ chia làm 2 nội dung chính:\n" +
+                    "1. 6 câu thơ đầu: Bức tranh về vẻ đẹp của núi Dục Thúy\n" +
+                    "a. Hai câu đầu: Giới thiệu chung về cảnh vật trong “mối quan hệ” với tác giả.\n" +
+                    "b. Bốn câu sau: Bức tranh sơn thủy hữu tình:\n" +
+                    "- Bức tranh toàn cảnh núi Dục Thuý được thể hiện rõ nét trong hai câu 3 - 4, từ điểm nhìn xa, có tầm bao quát rộng. \n" +
+                    "- Núi Dục Thuý được tác giả ví như đoá sen nổi trên mặt nước, hình ảnh và bút pháp mới lạ, độc đáo. Trong nguyên văn, tác giả không sử dụng từ ngữ biểu thị sự so sánh mà đồng nhất trực tiếp núi Dục Thuý với đoá sen. Hình ảnh đoá sen có ý nghĩa biểu tượng, gợi ý niệm thoát tục, như là cõi tiên rơi xuống trần gian. \n" +
+                    "- Ngôn từ được sử dụng tinh xác, tạo ấn tượng: Trong nguyên văn, từ phù có nghĩa là nổi, nhưng lay động tại chỗ (khác với phiếm cũng là nổi nhưng trôi dạt); từ truỵ có nghĩa là rơi, rớt từ trên cao xuống, thể hiện sự sống động trong miêu tả.\n" +
+                    "Dấu ấn riêng của tâm hồn Nguyễn Trãi thể hiện rõ nhất qua những liên tưởng xuất hiện ở cái nhìn cận cảnh (hai câu 5 -  6). \n" +
+                    "- Các chi tiết đặc sắc: so sánh bóng tháp hiện trên mặt nước như chiếc trâm ngọc xanh; ánh sáng sóng nước như đang soi chiếu mái tóc biếc. \n" +
+                    "- Trâm ngọc xanh và mái tóc biếc gợi hình ảnh trẻ trung, trong sáng, trữ tình, nên thơ, giúp liên tưởng đến hình ảnh người con gái. Vẻ đẹp của thiên nhiên được so sánh với vẻ đẹp của con người; lấy nét đẹp của người con gái để hình dung bóng núi trên sóng biếc. Sự liên tưởng này rất hiện đại, đặc biệt, hiếm thấy trong thơ cổ. Thơ cổ thường lấy chuẩn mực vẻ đẹp tự nhiên để so sánh với con người. Sự liên tưởng và bút pháp mới lạ này cho thấy tâm hồn trong sáng, nhạy cảm, tinh tế của nhà thơ.\n" +
+                    "\n" +
+                    "2. Hai câu cuối: Tâm sự hoài niệm của nhà thơ\n" +
+                    "- Hai câu kết bài thơ này, cũng giống như các bài thơ khác cùng chủ đề của Nguyễn Trãi, lại thường là sự bộc lộ những suy tư về con người, về lịch sử, về dân tộc. Ý thơ thể hiện rõ sự hoài niệm, nhớ tiếc. Điều này cho thấy tâm hồn hướng nội, sâu sắc của Nguyễn Trãi.\n" +
+                    " \"Dục Thúy Sơn ” là bài thơ tả cảnh ngụ tình đặc sắc. Bài thơ ngũ ngôn bát cú bằng chữ Hán. Hình tượng thơ mĩ lệ, cảnh sắc đượm vẻ thần tiên. Trong phần luận,4 hình ảnh ẩn dụ sóng nhau, đối nhau, hình ảnh này làm đẹp thêm hình ảnh kia, thể hiện cách cảm, cách tả của nhà thơ mang tâm hồn thơ mộng, tài hoa. Ức Trai, trong cảm nhận cái đẹp của thiên nhiên, sông núi, ngòi bút tài hoa của ông rất tinh tế và nhạy cảm trong gợi tả và biểu cảm.\n" +
+                    "\tKhi người chơi lựa chọn (3)\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
+            {
+                actionType: ActionType.NoAction,
+                speaker: Character.System,
+                text: "-\tNgôn từ thơ giàu hình ảnh, sức gợi tả.\n" +
+                    "-\tSử dụng thành công các biện pháp tu từ: ẩn dụ, so sánh,…\n" +
+                    "-\tTả cảnh ngụ tình\n",
+            },
+            {
+                speaker: Character.System,
+                actionType: ActionType.Choose,
+                text: "Bạn có muốn tìm hiểu thêm về những lựa chọn còn lại?",
+                buttons: [
+                    {
+                        text: "Quay lại",
+                        action: ButtonAction.RouterConversation,
+                        pos: 1
+                    }
+                ]
+            },
             {
                 actionType: ActionType.Choose,
                 speaker: Character.System,
