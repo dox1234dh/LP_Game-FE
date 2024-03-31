@@ -1500,7 +1500,7 @@ export const conversation = [
             {
                 actionType: ActionType.NoAction,
                 speaker: Character.System,
-                text: "“ Đêm khuya văng vẳng trống canh dồn,\n" +
+                text: "\n  “Đêm khuya văng vẳng trống canh dồn,\n" +
                     "   Trơ cái hồng nhan với nước non.\n" +
                     "   Chén rượu hương đưa say lại tỉnh,\n" +
                     "   Vầng trang bóng xế khuyết chưa tròn.\n" +
