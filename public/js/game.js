@@ -270,7 +270,9 @@ class game {
         // kiểm tra xem số lượng câu
         if (idxQuestion === listQuestion.length) check = true
         // kiểm tra xem quá số lượng câu sai chưa
-        if (errorAnswer >= Math.floor(listQuestion.length * 3 / 10)) check = true
+        let numberOfError = 3;
+        if (listQuestion.length <= 5) numberOfError = Math.floor(listQuestion.length * 4 / 10);
+        if (errorAnswer >= numberOfError) check = true
         return check;
     }
 
