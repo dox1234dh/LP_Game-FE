@@ -1317,7 +1317,7 @@ export const conversation = [
             {
                 actionType: ActionType.NoAction,
                 speaker: Character.System,
-                text: "3\tPhiên âm\n" +
+                text: "\n\tPhiên âm\n" +
                     "Hải khẩu hữu tiên san;\n" +
                     "Tiền niên lu vãng hoàn.\n" +
                     "Liên hoa phù thủy thượng;\n" +
@@ -1345,8 +1345,7 @@ export const conversation = [
                     "Bóng tháo hình trâm ngọc;\n" +
                     "Gương sông ánh tóc huyền.\n" +
                     "Nhớ xưa Trương Thiếu bảo; \n" +
-                    "Bia khắc dấu rêu hoen.\n" +
-                    "\tKhi người chơi lựa chọn (1)\n",
+                    "Bia khắc dấu rêu hoen.\n",
             },
             {
                 speaker: Character.System,
@@ -1382,7 +1381,7 @@ export const conversation = [
             {
                 actionType: ActionType.NoAction,
                 speaker: Character.System,
-                text: "5\tBài thơ chia làm 2 nội dung chính:\n" +
+                text: "\tBài thơ chia làm 2 nội dung chính:\n" +
                     "1. 6 câu thơ đầu: Bức tranh về vẻ đẹp của núi Dục Thúy\n" +
                     "a. Hai câu đầu: Giới thiệu chung về cảnh vật trong “mối quan hệ” với tác giả.\n" +
                     "b. Bốn câu sau: Bức tranh sơn thủy hữu tình:\n" +
@@ -1395,8 +1394,7 @@ export const conversation = [
                     "\n" +
                     "2. Hai câu cuối: Tâm sự hoài niệm của nhà thơ\n" +
                     "- Hai câu kết bài thơ này, cũng giống như các bài thơ khác cùng chủ đề của Nguyễn Trãi, lại thường là sự bộc lộ những suy tư về con người, về lịch sử, về dân tộc. Ý thơ thể hiện rõ sự hoài niệm, nhớ tiếc. Điều này cho thấy tâm hồn hướng nội, sâu sắc của Nguyễn Trãi.\n" +
-                    " \"Dục Thúy Sơn ” là bài thơ tả cảnh ngụ tình đặc sắc. Bài thơ ngũ ngôn bát cú bằng chữ Hán. Hình tượng thơ mĩ lệ, cảnh sắc đượm vẻ thần tiên. Trong phần luận,4 hình ảnh ẩn dụ sóng nhau, đối nhau, hình ảnh này làm đẹp thêm hình ảnh kia, thể hiện cách cảm, cách tả của nhà thơ mang tâm hồn thơ mộng, tài hoa. Ức Trai, trong cảm nhận cái đẹp của thiên nhiên, sông núi, ngòi bút tài hoa của ông rất tinh tế và nhạy cảm trong gợi tả và biểu cảm.\n" +
-                    "\tKhi người chơi lựa chọn (3)\n",
+                    " \"Dục Thúy Sơn ” là bài thơ tả cảnh ngụ tình đặc sắc. Bài thơ ngũ ngôn bát cú bằng chữ Hán. Hình tượng thơ mĩ lệ, cảnh sắc đượm vẻ thần tiên. Trong phần luận,4 hình ảnh ẩn dụ sóng nhau, đối nhau, hình ảnh này làm đẹp thêm hình ảnh kia, thể hiện cách cảm, cách tả của nhà thơ mang tâm hồn thơ mộng, tài hoa. Ức Trai, trong cảm nhận cái đẹp của thiên nhiên, sông núi, ngòi bút tài hoa của ông rất tinh tế và nhạy cảm trong gợi tả và biểu cảm.\n",
             },
             {
                 speaker: Character.System,
