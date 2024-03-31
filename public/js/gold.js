@@ -29,8 +29,8 @@ class gold {
 
     init(type, score) {
         this.type = type;
-        this.x = 2 * this.game.getWidth() + Math.random() * (game_W - 4 * this.game.getWidth());
-        this.y = 2 * this.game.getWidth() + game_H / 3 + Math.random() * (2 * game_H / 3 - 4 * this.game.getWidth());
+        this.x = 2 * this.game.getWidth() - 150 +  (type+1)/10 * (game_W - 4 * this.game.getWidth()) * 1.5;
+        this.y = 2 * this.game.getWidth() - 200 + game_H / 3 + (2 * game_H / 3 - 4 * this.game.getWidth());
         this.alive = true;
         this.score = score;
         this.update();
@@ -40,52 +40,52 @@ class gold {
         switch (this.type) {
             case 0:
                 this.speed = this.game.getWidth() / 5;
-                this.width = this.game.getWidth() * 3;
-                this.height = this.game.getWidth() * 1.5;
+                this.width = this.game.getWidth() * 2.5;
+                this.height = this.game.getWidth() * 1.25;
                 this.IM = answerA;
                 break;
             case 1:
                 this.speed = this.game.getWidth() / 5;
-                this.width = this.game.getWidth() * 3;
-                this.height = this.game.getWidth() * 1.5;
+                this.width = this.game.getWidth() * 2.5;
+                this.height = this.game.getWidth() * 1.25;
                 this.IM = answerB;
                 break;
             case 2:
                 this.speed = this.game.getWidth() / 5;
-                this.width = this.game.getWidth() * 3;
-                this.height = this.game.getWidth() * 1.5;
+                this.width = this.game.getWidth() * 2.5;
+                this.height = this.game.getWidth() * 1.25;
                 this.IM = answerC;
                 break;
             case 3:
                 this.speed = this.game.getWidth() / 5;
-                this.width = this.game.getWidth() * 3;
-                this.height = this.game.getWidth() * 1.5;
+                this.width = this.game.getWidth() * 2.5;
+                this.height = this.game.getWidth() * 1.25;
                 this.IM = answerD;
                 break;
             case 4:
                 this.speed = this.game.getWidth() / 5;
-                this.width = this.game.getWidth() * 3;
-                this.height = this.game.getWidth() * 1.5;
+                this.width = this.game.getWidth() * 2.5;
+                this.height = this.game.getWidth() * 1.25;
                 this.IM = answerE;
                 break;
             case 5:
                 this.speed = this.game.getWidth() / 5;
-                this.width = this.game.getWidth() * 3;
-                this.height = this.game.getWidth() * 1.5;
+                this.width = this.game.getWidth() * 2.5;
+                this.height = this.game.getWidth() * 1.25;
                 this.IM = answerF;
                 break;
             case 6:
                 this.speed = this.game.getWidth() / 5;
-                this.width = this.game.getWidth() * 3;
-                this.height = this.game.getWidth() * 1.5;
+                this.width = this.game.getWidth() * 2.5;
+                this.height = this.game.getWidth() * 1.25;
                 this.IM = answerG;
                 break;
         }
     }
 
     randomXY() {
-        this.x = 2 * this.game.getWidth() + Math.random() * (game_W - 4 * this.game.getWidth());
-        this.y = 2 * this.game.getWidth() + game_H / 3 + Math.random() * (2 * game_H / 3 - 4 * this.game.getWidth());
+        this.x = 2 * this.game.getWidth() + (game_W - 4 * this.game.getWidth());
+        this.y = 2 * this.game.getWidth() + game_H / 3 + (2 * game_H / 3 - 4 * this.game.getWidth());
     }
 
     draw() {
@@ -94,6 +94,6 @@ class gold {
     }
 
     size() {
-        return Math.sqrt(this.width * this.width + this.height * this.height) / 2;
+        return Math.sqrt(this.width * this.width + this.height * this.height) / 2.2;
     }
 }

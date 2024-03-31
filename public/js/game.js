@@ -267,7 +267,7 @@ class game {
     checkExit() {
         let check = false;
         // kiểm tra xem số lượng câu
-        if (idxQuestion + 1 === listQuestion.length) check = true
+        if (idxQuestion === listQuestion.length) check = true
         // kiểm tra xem quá số lượng câu sai chưa
         if (errorAnswer >= Math.floor(listQuestion.length * 3 / 10)) check = true
         return check;
@@ -284,17 +284,17 @@ class game {
             else
                 this.gg[i] = new gold(this, i, 0);
         }
-        while (true) {
-            let check = true;
-            for (let i = 0; i < N - 1; i++)
-                for (let j = i + 1; j < N; j++)
-                    while (this.range(this.gg[i].x, this.gg[i].y, this.gg[j].x, this.gg[j].y) < 2 * this.getWidth()) {
-                        check = false;
-                        this.gg[j].randomXY();
-                    }
-            if (check)
-                break;
-        }
+        // while (true) {
+        //     let check = true;
+        //     for (let i = 0; i < N - 1; i++)
+        //         for (let j = i + 1; j < N; j++)
+        //             while (this.range(this.gg[i].x, this.gg[i].y, this.gg[j].x, this.gg[j].y) < 2 * this.getWidth()) {
+        //                 check = false;
+        //                 this.gg[j].randomXY();
+        //             }
+        //     if (check)
+        //         break;
+        // }
     }
 
     getWidth() {
