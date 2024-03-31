@@ -94,11 +94,10 @@ export const conversation = [
             },
             {
                 speaker: Character.System,
-                actionType: ActionType.ShowImage,
+                actionType: ActionType.NoAction,
                 text: "Văn học trung đại Việt Nam bao gồm những tác phẩm được sáng tác, hình thành và phát triển trong khoảng thời gian từ TK XVI đến TK XIX (thời kỳ phong kiến Việt Nam - thời kỳ bắt đầu tự chủ của dân tộc đến khi Pháp thuộc)\n" +
                     "\n" +
                     "*Chú thích: Thời kì phong kiến- chế độ quân chủ chuyên chế- chế độ đất nước tồn tại dưới dạng Vua là người trị vì cao nhất, phản ánh hình thức truyền nối và chiếm hữu đất đai; cấu trúc xã hội xoay quanh những mối quan hệ xuất phát từ việc sở hữu đất đai để đổi lấy lao động, địa chủ bóc lột nông dân…\n",
-                image: '/conversation-images/10.png'
             },
             {
                 speaker: Character.System,
@@ -114,11 +113,10 @@ export const conversation = [
             },
             {
                 speaker: Character.System,
-                actionType: ActionType.ShowImage,
+                actionType: ActionType.NoAction,
                 text: "Văn học trung đại Việt Nam gồm 2 bộ phận chính:\n" +
                     "+ Văn học viết bằng chữ Hán\n" +
                     "+ Văn học viết bằng chữ Nôm\n",
-                image: '/conversation-images/11.png'
             },
             {
                 speaker: Character.System,
@@ -152,9 +150,8 @@ export const conversation = [
             },
             {
                 speaker: Character.System,
-                actionType: ActionType.ShowImage,
+                actionType: ActionType.NoAction,
                 text: "Tác giả là người Việt Nam sáng tác (chủ yếu là tầng lớp trí thức phong kiến: vua, quan, tăng lữ, Nho sĩ, nhà sư,…)",
-                image: '/conversation-images/13.png'
             },
             {
                 speaker: Character.System,
@@ -170,11 +167,10 @@ export const conversation = [
             },
             {
                 speaker: Character.System,
-                actionType: ActionType.ShowImage,
+                actionType: ActionType.NoAction,
                 text: "-\tVăn học dân gian – lấy văn học dân gian làm nền tảng (đề tài, ngôn ngữ, thể thơ, cốt truyện, nghệ thuật trữ tình tự sự, quan niệm “bất thành văn” “phi chính thống”…) \n" +
                     "-\tVăn học cổ điển Trung Hoa (tư tưởng, thể thơ, thi liệu, quan điểm sáng tác,…)\n" +
                     "Chọn lọc, sáng tạo, biến đổi phù hợp với đặc điểm dân tộc và thời đại con người đất Việt.\n",
-                image: '/conversation-images/14.png'
             },
             {
                 speaker: Character.System,
@@ -190,11 +186,10 @@ export const conversation = [
             },
             {
                 speaker: Character.System,
-                actionType: ActionType.ShowImage,
+                actionType: ActionType.NoAction,
                 text: "-\tChủ nghĩa yêu nước – gắn với vận mệnh đất nước \n" +
                     "-\tChủ nghĩa nhân đạo – gắn với số phận con người\n" +
                     "\tLuôn gắn bó với vận mệnh quốc gia, dân tộc, thể hiện rõ tinh thần yêu nước và đề cao các giá trị nhân văn, nhân đạo.",
-                image: '/conversation-images/15.png'
             },
             {
                 speaker: Character.System,
@@ -210,10 +205,9 @@ export const conversation = [
             },
             {
                 speaker: Character.System,
-                actionType: ActionType.ShowImage,
+                actionType: ActionType.NoAction,
                 text: "Tính quy phạm và phá vỡ tính quy phạm luôn là những đặc trưng điển hình và nổi bật nhất trong những sáng ở thời kì này từ quan điểm sáng tác, kiểu tư duy nghệ thuật, hình thức thể loại, hệ thống thi liệu và các thủ pháp ngôn ngữ,… \n" +
                     "Tuy luôn được quy định chặt chẽ và có tính khuôn mẫu, song một số đặc điểm quy phạm bị phá vỡ vẫn thường xuất hiện, thể hiện tính dân tộc và ý thức cá tính của từng tác giả,…\n",
-                image: '/conversation-images/16.png'
             },
             {
                 speaker: Character.System,
@@ -229,7 +223,7 @@ export const conversation = [
             },
             {
                 speaker: Character.System,
-                actionType: ActionType.ShowImage,
+                actionType: ActionType.NoAction,
                 text: "Chức năng giáo huấn: “văn dĩ tải đạo” , “thi dĩ ngôn chí” của Nho giáo ảnh hướng đến Lễ kí, \n" +
                     "\tThi có chức năng giáo dục đạo lí, cần đạt tiêu chuẩn “ôn tồn hòa nhã, nhẹ nhàng mềm dẻo, thành thật hết lòng, đầy đặn không hời hợt bạc bẽo”.\n" +
                     "Chức năng mang tính chính thống.\n" +
@@ -244,7 +238,6 @@ export const conversation = [
                     "Quan niệm này được bộc lộ gián tiếp qua những sáng tác chữ Nôm; đặc biệt là tiếng cười trào phúng mang đậm chất sống của văn học dân gian, đi ngược lại tinh thần “mỹ thích” của văn chương nhà Nho…\n" +
                     "(ví dụ trong phú thơ Nôm của Hồ Xuân Hương, Phạm Thái, Nguyễn Công Trứ, Nguyễn Quý Tân,…)\n" +
                     "\n",
-                image: '/conversation-images/17.png'
             },
             {
                 speaker: Character.System,
@@ -260,7 +253,7 @@ export const conversation = [
             },
             {
                 speaker: Character.System,
-                actionType: ActionType.ShowImage,
+                actionType: ActionType.NoAction,
                 text: "-\tTrần Nhân Tông (vị vua thứ 3 của đời nhà Trần, sau Trần Thánh Tông.)\n" +
                     "-\tNguyễn Trãi\n" +
                     "-\tNguyễn Du\n" +
@@ -270,7 +263,6 @@ export const conversation = [
                     "-\tĐoàn Thị Điểm\n" +
                     "-\tTrần Quốc Tuấn\n" +
                     "-\tChu Văn An\n",
-                image: '/conversation-images/18.png'
             },
             {
                 speaker: Character.System,
