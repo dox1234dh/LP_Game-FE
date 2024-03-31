@@ -171,6 +171,7 @@ class game {
                         N = listQuestion[idxQuestion]?.listAnswers.length
                         this.gg[i].alive = false;
                         this.score += this.gg[i].score;
+                        time = 60;
                         timeH = time - 0.7;
                         vlH = this.gg[i].score;
                         this.newGold();
