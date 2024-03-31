@@ -321,6 +321,15 @@ class game {
             currentQuestionIndex: idxQuestion
         }, "*");
     }
+    propData() {
+        const self = this;
+        window.nextQuestion = function () {
+            // chuyển sang câu tiếp theo
+            idxQuestion++;
+            N = listQuestion[idxQuestion]?.listAnswers.length
+            self.newGold();
+        }
+    }
 }
 
 new game();

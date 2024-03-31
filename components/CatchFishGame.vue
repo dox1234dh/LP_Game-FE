@@ -11,11 +11,24 @@
         <div class="text-lg">
           {{ questionCurrent['question'] }}
         </div>
+        <div>
+          {{ questionCurrent['hint'] }}
+        </div>
         <!--     Danh sách các câu trả lời -->
         <div class="flex flex-col space-y-2 overflow-y-auto">
           <div v-for="(item,idx) in questionCurrent?.listAnswers" :key="idx"
                class="w-full break-words text-wrap text-black border rounded bg-[#bdbdbd] text-base">
-            {{ keyQuestion[idx] + ': ' + item?.answer }}
+            <div v-if="questionCurrent.categoryQuestion === 1">
+              {{ keyQuestion[idx] + ': ' + item?.answer }}
+            </div>
+            <div v-else-if="questionCurrent.categoryQuestion === 2">
+              <span>{{ keyQuestion[idx] }}</span>
+              <img :src="item?.answer" :alt="idx">
+            </div>
+          </div>
+          <div v-if="questionCurrent.categoryQuestion === 3" class="space-y-1 w-full">
+            <a-input v-model:value="answerText"/>
+            <a-button class="bg-white" type="default" @click="()=>nextQuestion">Xác nhận</a-button>
           </div>
         </div>
       </div>
@@ -36,8 +49,9 @@ export default {
     return {
       questionCurrent: {},
       keyQuestion: [
-        'A', 'B', 'C', 'D','E','F','G'
-      ]
+        'A', 'B', 'C', 'D', 'E', 'F', 'G'
+      ],
+      answerText: ''
     }
   },
   mounted() {
@@ -62,6 +76,10 @@ export default {
       if (score !== undefined && status !== undefined) {
         this.$emit('callback', {score, status})
       }
+    },
+    nextQuestion() {
+      this.answerText = ''
+      document.getElementById('game').contentWindow.nextQuestion();
     }
   }
 };

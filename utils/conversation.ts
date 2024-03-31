@@ -410,7 +410,7 @@ export const conversation = [
                     "\n" +
                     "2.\tĐặc điểm nghệ thuật\n" +
                     "Là sự kết tinh của văn chính luận, thơ chữ Hán và thơ chữ Nôm cùng nhiều thành tựu nghệ thuật đặc sắc, góp phần quan trọng vào sự phát triển, hoàn thiện một số thể loại văn học trung đại Việt Nam…\n" +
-                    "-\tVăn chính luận của Nguyễn Trãi luôn đạt tới trình độ mẫu mực phần lớn đều hết sức thuyết phục: sự kết hợp giữa lí lẽ sắc bén, dẫn chứng xác đáng; cách lập luận và bố cụ chặt chẽ; ngôn ngữ hàm súc, kết hợp nhiều phong cách ngôn ngữ và nhiều phương thức biểu đạt, giọng điệu truyền cảm…\n" +
+                    "-\tVăn chính luận của Nguyễn Trãi luôn đạt tới trình độ mẫu mực phần lớn đều hết sức thuyết phục: sự kết hợp giữa lí lẽ sắc bén, dẫn chứng xác đáng; cách lập luận và bố cục chặt chẽ; ngôn ngữ hàm súc, kết hợp nhiều phong cách ngôn ngữ và nhiều phương thức biểu đạt, giọng điệu truyền cảm…\n" +
                     "-\tThơ chữ Hán hầu hết được sáng tác bằng thể thơ Đường luật cùng sự phá cách, đạt tới trình độ nhuần nhuyễn, điêu luyện; ngôn ngữ cô đúc; nghệ thuật tả cảnh, tả tình, tinh tế, tài hoa, “ý tại ngôn ngoại”…\n" +
                     "-\tThơ chữ Nôm của ông được đánh giá là đỉnh cao của dòng thơ quốc âm (tiếng Việt) thời trung đại. Ngôn ngữ thơ giản dị, đậm đà tính dân tộc…\n",
                 image: '/conversation-images/38.png'
@@ -1681,7 +1681,7 @@ export const conversation = [
                 text: "-\tXuất xứ: là bài thơ thứ 3 trong “Chùm thơ thu”: “Thu điếu”- “Thu vịnh”- “Thu ẩm”. \n" +
                     "-\tHoàn cảnh sáng tác: viết trong thời gian khi Nguyễn Khuyến về ở ẩn tại quê nhà. \n" +
                     "-\tThể loại: thơ Nôm Đường luật, viết theo thể thất ngôn bát cú \n" +
-                    "-\tBố cụ: Đề- thực- luận- kết \n",
+                    "-\tBố cục: Đề- thực- luận- kết \n",
             },
             {
                 speaker: Character.System,
