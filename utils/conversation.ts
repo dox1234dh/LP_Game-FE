@@ -4010,7 +4010,7 @@ export const conversation = [
                 ]
             },
             {
-                actionType: ActionType.ShowImage,
+                actionType: ActionType.NoAction,
                 speaker: Character.System,
                 text: "Dưới đây là những mục nội dung khi tìm hiểu về bài thơ “Đất nước” mà bạn cần lưu ý:\n" +
                     "a. Mùa thu đất nước trong hoài niệm của tác giả (từ đầu bài thơ đến “Những buổi ngày xưa vọng nói về”)\n" +
@@ -4048,7 +4048,6 @@ export const conversation = [
                     "c. Tổng kết giá trị nội dung\n" +
                     "- Đất nước được cảm nhận trong chiều dài của những năm tháng kháng chiến.\n" +
                     "- Cảm xúc, suy tư của tác giả về đất nước: vừa gần gũi nhưng cũng thật thiêng liêng, vĩ đại và anh hùng.\n",
-                image: '/conversation-images/33.png'
             },
             {
                 speaker: Character.System,
