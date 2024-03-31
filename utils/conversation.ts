@@ -1804,7 +1804,7 @@ export const conversation = [
                 speaker: Character.System,
                 text: "Có 3 đặc điểm cơ bản của nền văn học từ đầu thế kỉ XX đến CMT8 1945:\n"
                     + "Nền văn học đổi mới theo hướng hiện đại hóa\n"
-                    + "Sự phân hóa phức tjap thành nhiều xu hướng văn học\n"
+                    + "Sự phân hóa phức tạp thành nhiều xu hướng văn học\n"
                     + "Văn học phát triển với một tốc độ phát triển hết sức nhanh chóng\n"
                     + "Câu hỏi thắc mắc:",
                 buttons: [
