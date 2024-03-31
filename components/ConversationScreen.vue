@@ -37,7 +37,7 @@
         <!--        List Button  -->
         <a-button v-for="(item, idx) in listBtn"
                   :key="idx"
-                  class="bg-[#1677ff]"
+                  class="bg-[#1677ff] break-words text-wrap h-fit"
                   type="primary"
                   @click="handleEventClick(item)">
           {{ item?.text }}
