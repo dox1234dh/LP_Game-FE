@@ -1,5 +1,5 @@
 <template>
-  <audio class="hidden" controls autoplay loop>
+  <audio id="bgMusic" class="hidden" controls autoplay loop>
     <source src="~/public/BGMusic.wav" type="audio/wav">
   </audio>
   <div
@@ -74,7 +74,9 @@ import {conversation} from "~/utils/conversation";
 const route = useRoute();
 const router = useRouter();
 const conversationData = <any>ref(null);
+let audioCtrl: HTMLAudioElement | any;
 onMounted(() => {
+  audioCtrl = document.getElementById('bgMusic');
   const id = Number(route.query.id);
   conversationData.value = conversation.find(item => item.id === id)?.conversation;
   loopConversation();
@@ -164,6 +166,9 @@ function handleClickTyping() {
         imageShow.value = conversationData.value[indexConversation.value - 1].image
         isImgOrVideo.value = conversationData.value[indexConversation.value - 1]?.key;
         isShowImage.value = true
+        if (isImgOrVideo.value) {
+          audioCtrl.pause();
+        }
         break;
       default:
         break;
@@ -176,6 +181,7 @@ const showModal = () => {
   open.value = true;
 };
 const handleOk = () => {
+  audioCtrl.play();
   open.value = false;
   isShowImage.value = false;
   loopConversation();
