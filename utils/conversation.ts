@@ -12,6 +12,7 @@ enum ActionType {
 enum ButtonAction {
     PlayGame,
     RouterConversation,
+    BackHomePage,
 }
 
 export const conversation = [
@@ -31,7 +32,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ]
@@ -310,7 +311,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -481,7 +482,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -688,7 +689,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -832,7 +833,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -1099,7 +1100,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -1278,7 +1279,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -1461,7 +1462,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -1611,7 +1612,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -1755,7 +1756,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ]
@@ -1912,7 +1913,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -2049,7 +2050,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -2181,7 +2182,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -2291,7 +2292,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -2440,7 +2441,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -2657,7 +2658,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -2807,7 +2808,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -2956,7 +2957,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -3104,7 +3105,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ]
@@ -3328,7 +3329,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -3480,7 +3481,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -3638,7 +3639,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -3870,7 +3871,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -4105,7 +4106,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ]
@@ -4304,7 +4305,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],
@@ -4509,7 +4510,7 @@ export const conversation = [
                     },
                     {
                         text: "TÔI MUỐN SUY NGHĨ THÊM",
-                        action: ButtonAction.RouterConversation,
+                        action: ButtonAction.BackHomePage,
                         pos: 0
                     }
                 ],

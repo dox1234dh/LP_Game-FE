@@ -127,14 +127,16 @@ async function loopConversation() {
 }
 
 
-function handleEventClick(item: any) {
+async function handleEventClick(item: any) {
   if (item.action === 0) {
     //  emit to play game
     emit('playGame', true);
   } else if (item.action === 1) {
     indexConversation.value = item.pos;
     isShowButtonGroup.value = false;
-    loopConversation();
+    await loopConversation();
+  } else if (item.action === 2) {
+    await router.push('/');
   }
 }
 
